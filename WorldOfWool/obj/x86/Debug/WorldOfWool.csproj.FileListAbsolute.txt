@@ -116,7 +116,6 @@ c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\bin
 c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\System.Xml.XDocument.dll
 c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\System.Xml.XmlDocument.dll
 c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\System.Xml.XmlSerializer.dll
-c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\WorldOfWool.csprojResolveAssemblyReference.cache
 c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\App.g.i.cs
 c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\App.g.cs
 c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\MainPage.g.i.cs

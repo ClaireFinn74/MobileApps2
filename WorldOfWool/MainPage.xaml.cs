@@ -31,5 +31,13 @@ namespace WorldOfWool
         {
             Frame.Navigate(typeof(Play));
         }
+
+        int happiness = 0;
+        private void btnLove_click(object sender, RoutedEventArgs e)
+        {
+            happiness++; //increments
+            txtbHappiness.Text = happiness.ToString();
+        }
     }
+
 }
