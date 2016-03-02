@@ -25,6 +25,7 @@ namespace WorldOfWool
         public MainPage()
         {
             this.InitializeComponent();
+            sbSheep.Begin();
         }
 
         private void btnPlay_click(object sender, RoutedEventArgs e)
@@ -46,6 +47,7 @@ namespace WorldOfWool
                 happiness--;
             }
         }
+
     }
 
 }
