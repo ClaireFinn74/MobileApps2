@@ -7,4 +7,4 @@
 3. Added a "Mood" counter that increments every time "Gimmie Love" button is pressed and stops at 100
 
 ##Commit3
-1. Storyboard done so that the Sheep blinks every 5 seconds using 2 images; 1 Visible (eyes open), while the other is collapsed (eyes closed))
+1. Storyboard done so that the Sheep blinks every 5 seconds using 2 images; 1 Visible (eyes open), while the other is collapsed (eyes closed)
