@@ -9,7 +9,6 @@
 ##Commit3
 1. Storyboard done so that the Sheep blinks every 5 seconds using 2 images; 1 Visible (eyes open), while the other is collapsed (eyes closed)
 2. Added ReadMe
-3. 
 
 ##Commit3
 1. When the user presses the 'Gimmie Love' button, the counter increases to 100.
