@@ -25,6 +25,9 @@ namespace WorldOfWool
         public MainPage()
         {
             this.InitializeComponent();
+            //Displays Sheep emotion
+            txtbHappiness.Text = happiness.ToString();
+            //begins story board for sheep blinking
             sbSheep.Begin();
         }
 
@@ -33,19 +36,25 @@ namespace WorldOfWool
             Frame.Navigate(typeof(Play));
         }
 
-        
+
         int happiness = 0;
-        private void btnLove_click(object sender, RoutedEventArgs e)
+        private void btnLove_click (object sender, RoutedEventArgs e)
         {
+            //when happiness is less than 100, increases as you click
             if (happiness < 100)
                 {
-                happiness++; //increments
-                txtbHappiness.Text = happiness.ToString();
+                    happiness++; //increments
+                    txtbHappiness.Text = happiness.ToString(); //displays textbox
+                }
+            else if (happiness == 100) //when happiness is equal to 100
+                {
+                sbSheep.Stop(); //stop storyboard with the bored sheep
+                sbSmile.Begin(); //begin the storyboard with the smiling sheep
                 }
             else
-            {
-                happiness--;
-            }
+                {
+                    happiness--; //stop after 100
+                }
         }
 
     }

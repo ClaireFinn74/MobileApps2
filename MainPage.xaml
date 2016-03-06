@@ -21,8 +21,25 @@
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
-    </Page.Resources>
 
+        <Storyboard x:Name="sbSmile">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSheep1">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSleep">
+                    <DiscreteObjectKeyFrame KeyTime="0:0:0.2">
+                        <DiscreteObjectKeyFrame.Value>
+                            <Visibility>Collapsed</Visibility>
+                        </DiscreteObjectKeyFrame.Value>
+                    </DiscreteObjectKeyFrame>
+                </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+   
     <Grid x:Name="grdCanvas" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-168,-88,-627,10" d:IsLocked="True">
         <TextBlock Name="txtbHappiness" Margin="682,276,323,379" Width="150" RenderTransformOrigin="-1.229,1.058" d:IsLocked="True"/>
         <Button x:Name="btnLove" Content="Gimmie Love!" HorizontalAlignment="Left" Margin="643,222,0,0" VerticalAlignment="Top" Click="btnLove_click" Height="49" Background="#FFF343EB" BorderThickness="6" RequestedTheme="Light" FontSize="26.667" BorderBrush="#FF3F2693" d:IsLocked="True"/>
@@ -31,7 +48,8 @@
                 <CompositeTransform Rotation="-0.085"/>
             </Button.RenderTransform>
         </Button>
-        <Image  Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True"/>
-        <Image x:Name="imgSheep1"  Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True"/>
+        <Image x:Name="imgSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True"/>
+        <Image  x:Name="imgSleep" Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
+        <Image x:Name="imgSheep1"  Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
     </Grid>
 </Page>
