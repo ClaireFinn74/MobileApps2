@@ -15,3 +15,6 @@
 2. At 100, the sbSheep storyboard stops and the sbSmile storyboard begins
 3. This changes the sheep from looking bored to looking happy!
 4. (sbSmile blinking functionality to be added next)
+
+##Commit5
+1. Added blinking functionality for the smiling sheep in the sbSmile storyboard
