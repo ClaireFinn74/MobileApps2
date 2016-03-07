@@ -8,7 +8,7 @@
     mc:Ignorable="d">
     <Page.Resources>
         <Storyboard x:Name="sbSheep" RepeatBehavior="Forever">
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSheep1">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSheep">
                 <DiscreteObjectKeyFrame KeyTime="0:0:5">
                     <DiscreteObjectKeyFrame.Value>
                         <Visibility>Collapsed</Visibility>
@@ -23,7 +23,7 @@
         </Storyboard>
 
         <Storyboard x:Name="sbSmile">
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSheep1">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSheep">
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.1">
                     <DiscreteObjectKeyFrame.Value>
                         <Visibility>Collapsed</Visibility>
@@ -37,6 +37,18 @@
                         </DiscreteObjectKeyFrame.Value>
                     </DiscreteObjectKeyFrame>
                 </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSmile" RepeatBehavior="Forever">
+                <DiscreteObjectKeyFrame KeyTime="0:0:5">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:5.5">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
     </Page.Resources>
    
@@ -48,8 +60,9 @@
                 <CompositeTransform Rotation="-0.085"/>
             </Button.RenderTransform>
         </Button>
-        <Image x:Name="imgSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True"/>
+        <Image x:Name="imgSleepSmile"  Source="Images/imgSleepSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" />
+        <Image x:Name="imgSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
         <Image  x:Name="imgSleep" Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
-        <Image x:Name="imgSheep1"  Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
+        <Image x:Name="imgSheep"  Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
     </Grid>
 </Page>
