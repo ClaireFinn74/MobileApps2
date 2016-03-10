@@ -25,3 +25,6 @@
 ##Commit 7
 1. Added images to the Play page where the game will take place.
 2. Added a pop-up box with instructions on how to play the game
+
+##Commit 8
+1. Added a timer that displays "times up" when finished (set to 60 seconds) so that the user can have a time limit
