@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="WorldOfWool.Play"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorldOfWool"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-168,-88,-652,10" RenderTransformOrigin="0.984,0.725">
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="231,601,0,0" VerticalAlignment="Top" Height="50" Width="98" Click="btnBack_click" RenderTransformOrigin="1.612,-1.239"/>
+        <Button x:Name="btnInstructions" Content="Instructions" HorizontalAlignment="Left" Margin="365,601,0,0" VerticalAlignment="Top" Height="50" Width="98" Click="btnInstructions_Click" RenderTransformOrigin="1.612,-1.239"/>
+        <Image x:Name="imgMiniSheep"  Source="ImagesPlay/imgMiniSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="100" Margin="211,171,0,0" d:IsLocked="True"/>
+        <Image x:Name="imgMiniSleep"  Source="ImagesPlay/imgMiniSleep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="100" Margin="290,190,0,0" d:IsLocked="True"/>
+        <Image x:Name="imgMiniTapped"  Source="ImagesPlay/imgMiniTapped.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="100" Margin="400,200,0,0" d:IsLocked="True"/>
+    </Grid>
+</Page>
