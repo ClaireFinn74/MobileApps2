@@ -18,3 +18,10 @@
 
 ##Commit5
 1. Added blinking functionality for the smiling sheep in the sbSmile storyboard
+2. 
+##Commit6
+Added a tap event (commented out for now, will get back to fixing it)
+
+##Commit 7
+1. Added images to the Play page where the game will take place.
+2. Added a pop-up box with instructions on how to play the game
