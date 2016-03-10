@@ -27,7 +27,7 @@ namespace WorldOfWool
             this.InitializeComponent();
             //Displays Sheep emotion
             txtbHappiness.Text = happiness.ToString();
-            //begins story board for sheep blinking
+            //begins story board for imgsheep blinking
             sbSheep.Begin();
         }
 
@@ -57,6 +57,12 @@ namespace WorldOfWool
                 }
         }
 
-    }
+        
 
+        private void imgSheep1_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+           //sbTapped.Begin();
+        }
+    }
+    
 }
