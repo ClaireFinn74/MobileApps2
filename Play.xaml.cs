@@ -28,15 +28,70 @@ namespace WorldOfWool
             this.InitializeComponent();
         }
 
+        //timer variables
+        DispatcherTimer dispatch;
+        DateTimeOffset start;
+        DateTimeOffset lastTime;
+        DateTimeOffset stop;
+        int ticks = 0;
+        int timesToTick = 2924;
+
+        public void dispatcher()
+        {
+            //set up timer
+            dispatch = new DispatcherTimer();
+            //setup tick event
+            dispatch.Tick += dispatch_Tick;
+            // (0,0,0,0) starts as soon as page loads
+            dispatch.Interval = new TimeSpan(0, 0, 0, 0);
+            // starts the timer at the current time
+            start = DateTimeOffset.Now;
+            //getting to know the amount of time you've been on the game
+            lastTime = start;
+            // Starts the timer
+            dispatch.Start();
+        }
+
+        //Setting tick event up
+        void dispatch_Tick(object sender, object e)
+        {
+            //Starts off at the current time
+            DateTimeOffset time = DateTimeOffset.Now;
+            //lastTime is = start time,getting to know the amount of time the user has been on the game and updating the timer
+            TimeSpan span = time - lastTime;
+            //Setting the timer to write to the textblock
+            txtbTimer.Text = "\t" + span.ToString();
+            //Increments the time
+            ticks++;
+
+            //Stopping the timer and displaying a message
+            if (ticks > timesToTick)
+            {
+                time = stop;
+                dispatch.Stop();
+                span = stop - start;
+                txtbTimer.Text = "Time's up!! " + "\n"; 
+            }
+        }
+        
+        //Back to the sheep
         private void btnBack_click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
         }
 
+        //Pop-up box for the instructions, loads asynchronously
         private async void btnInstructions_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new MessageDialog("So, trouble sleeping? \n Try to tap as many sheep as you possibly can within the time limit! \n That should get you right to sleep! \n Good Luck!!");
             await dialog.ShowAsync();
         }
+
+        //Starting the timer when the page has loaded
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            dispatcher();
+        }
+
     }
 }
