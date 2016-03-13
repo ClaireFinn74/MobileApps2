@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>55f2f3fb-2f47-4bf2-9fe5-4d86fb2f6aa7</PackageIdentityName>
-    <IntermediateOutputPath>c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>2AD07F9381DC3A6101FE014C8C6039943595411C06EAA98746CD5AA9A7A5F07C</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>55f2f3fb-2f47-4bf2-9fe5-4d86fb2f6aa7_1.0.0.0_x86__xp10nbj12f0ca</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>55f2f3fb-2f47-4bf2-9fe5-4d86fb2f6aa7_xp10nbj12f0ca!App</RegisteredUserModeAppID>
@@ -19,16 +19,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-02-29T20:27:43.248</Modified>
+      <Modified>2016-03-13T17:24:42.093</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\WorldOfWool.exe">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\WorldOfWool.exe">
       <PackagePath>entrypoint\WorldOfWool.exe</PackagePath>
-      <Modified>2016-02-29T20:27:41.149</Modified>
+      <Modified>2016-03-13T17:24:39.776</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -454,67 +454,87 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-02-08T17:47:08.075</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2016-02-29T17:20:23.982</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSheep.jpg">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\imgMiniTapped.jpg">
+      <PackagePath>imgMiniTapped.jpg</PackagePath>
+      <Modified>2016-03-09T12:03:24.788</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSheep.jpg">
       <PackagePath>Images\imgSheep.jpg</PackagePath>
       <Modified>2016-02-29T17:25:46.132</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSleep.jpg">
+      <PackagePath>Images\imgSleep.jpg</PackagePath>
+      <Modified>2016-03-02T13:18:27.779</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSleepSmile.jpg">
+      <PackagePath>Images\imgSleepSmile.jpg</PackagePath>
+      <Modified>2016-03-07T16:10:12.537</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSmile.jpg">
+      <PackagePath>Images\imgSmile.jpg</PackagePath>
+      <Modified>2016-03-02T13:18:51.702</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgTapped.jpg">
+      <PackagePath>Images\imgTapped.jpg</PackagePath>
+      <Modified>2016-03-02T12:13:49.949</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-02-29T17:19:59.721</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-10-10T21:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T21:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T21:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T21:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T21:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T21:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T21:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\WorldOfWool.xr.xml">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\WorldOfWool.xr.xml">
       <PackagePath>WorldOfWool.xr.xml</PackagePath>
-      <Modified>2016-02-29T20:27:40.678</Modified>
+      <Modified>2016-03-13T17:13:27.125</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-02-24T15:45:37.877</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-02-29T20:27:42.845</Modified>
+      <Modified>2016-03-13T17:24:41.608</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\Core\WorldOfWool.exe">
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\Core\WorldOfWool.exe">
       <PackagePath>WorldOfWool.exe</PackagePath>
-      <Modified>2016-02-29T20:27:43.240</Modified>
+      <Modified>2016-03-13T17:24:42.074</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

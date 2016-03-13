@@ -5,10 +5,44 @@
     xmlns:local="using:WorldOfWool"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Loaded="Page_Loaded">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="10,467,0,0" VerticalAlignment="Top" Height="81" Width="233" Click="btnBack_click"/>
+    <Page.Resources>
 
+
+        <Storyboard x:Name="sbBtnDown">
+            <DoubleAnimation Duration="0:0:2" To="216" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
+
+        </Storyboard>
+        <Storyboard x:Name="sbBtnUp">
+            <DoubleAnimation Duration="0:0:2" To="-284" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
+        </Storyboard>
+        <Storyboard x:Name="sbBtnRight">
+            <DoubleAnimation Duration="0:0:2" To="272" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
+        </Storyboard>
+        <Storyboard x:Name="sbBtnLeft">
+            <DoubleAnimation Duration="0:0:2" To="-244" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
+        </Storyboard>
+
+
+    </Page.Resources>
+
+    <Grid Margin="-168,-88,-652,10" RenderTransformOrigin="0.984,0.725">
+        <!-- Back Button, Instructions Button-->
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="169,625,0,0" VerticalAlignment="Top" Height="39" Width="98" Click="btnBack_click" RenderTransformOrigin="1.612,-1.239"/>
+        <Button x:Name="btnInstructions" Content="Instructions" HorizontalAlignment="Left" Margin="418,631,0,0" VerticalAlignment="Top" Height="37" Width="98" Click="btnInstructions_Click" RenderTransformOrigin="1.612,-1.239"/>
+        <!-- Left, Right, Up and Down buttons-->
+        <Button x:Name="btnLeft" Content="Left" HorizontalAlignment="Left" Margin="280,583,0,0" VerticalAlignment="Top" Height="34" Width="59" Click="btnLeft_Click" RenderTransformOrigin="1.612,-1.239"/>
+        <Button x:Name="btnRight" Content="Right" HorizontalAlignment="Left" Margin="360,583,0,0" VerticalAlignment="Top" Height="34" Width="59" Click="btnRight_Click" RenderTransformOrigin="1.612,-1.239"/>
+        <Button x:Name="btnUp" Content="Up" HorizontalAlignment="Left" Margin="439,583,0,0" VerticalAlignment="Top" Height="34" Width="61" Click="btnUp_Click" RenderTransformOrigin="1.612,-1.239"/>
+        <Button x:Name="btnDown" Content="Down" HorizontalAlignment="Left" Margin="202,583,0,0" VerticalAlignment="Top" Height="34" Width="61" Click="btnDown_Click" RenderTransformOrigin="1.612,-1.239"/>
+        <!-- Images-->
+        <Image x:Name="imgTapped"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="308,291,0,0" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <!-- Timer TextBlock -->
+        <TextBlock x:Name="txtbTimer" Margin="739,346,24,272"  Text=""/>
     </Grid>
 </Page>
