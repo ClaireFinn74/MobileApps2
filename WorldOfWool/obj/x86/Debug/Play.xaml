@@ -10,40 +10,43 @@
     <Page.Resources>
 
 
-        <Storyboard x:ConnectionId='2' x:Name="sbBtnDown">
-            <DoubleAnimation Duration="0:0:2" To="216" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
+        <!--<Storyboard x:Name="sbBtnDown" RepeatBehavior="Forever">
+            <DoubleAnimation Duration="0:0:0.1" To="37.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
 
         </Storyboard>
-        <Storyboard x:ConnectionId='3' x:Name="sbBtnUp">
-            <DoubleAnimation Duration="0:0:2" To="-284" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
+        <Storyboard x:Name="sbBtnUp" RepeatBehavior="Forever">
+            <DoubleAnimation Duration="0:0:0.1" To="-42.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
+        </Storyboard> -->
+        <Storyboard x:ConnectionId='2' x:Name="sbBtnRight" AutoReverse="False">
+            <DoubleAnimation Duration="0:0:0.1" To="141.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
+
         </Storyboard>
-        <Storyboard x:ConnectionId='4' x:Name="sbBtnRight">
-            <DoubleAnimation Duration="0:0:2" To="272" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
-        </Storyboard>
-        <Storyboard x:ConnectionId='5' x:Name="sbBtnLeft">
-            <DoubleAnimation Duration="0:0:2" To="-244" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
+        <Storyboard x:ConnectionId='3' x:Name="sbBtnLeft" AutoReverse="False">
+            <DoubleAnimation Duration="0:0:0.1" To="-141.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
         </Storyboard>
 
-
+       <Storyboard x:ConnectionId='4' x:Name="sbBtnCentre">
+        <DoubleAnimation Duration="0:0:0.1" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimised="True"/>
+        </Storyboard>
     </Page.Resources>
 
     <Grid Margin="-168,-88,-652,10" RenderTransformOrigin="0.984,0.725">
         <!-- Back Button, Instructions Button-->
-        <Button x:ConnectionId='6' x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="169,625,0,0" VerticalAlignment="Top" Height="39" Width="98"                       RenderTransformOrigin="1.612,-1.239"/>
-        <Button x:ConnectionId='7' x:Name="btnInstructions" Content="Instructions" HorizontalAlignment="Left" Margin="418,631,0,0" VerticalAlignment="Top" Height="37" Width="98"                               RenderTransformOrigin="1.612,-1.239"/>
+        <Button x:ConnectionId='5' x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="169,625,0,0" VerticalAlignment="Top" Height="39" Width="98"                       RenderTransformOrigin="1.612,-1.239"/>
+        <Button x:ConnectionId='6' x:Name="btnInstructions" Content="Instructions" HorizontalAlignment="Left" Margin="418,631,0,0" VerticalAlignment="Top" Height="37" Width="98"                               RenderTransformOrigin="1.612,-1.239"/>
         <!-- Left, Right, Up and Down buttons-->
-        <Button x:ConnectionId='8' x:Name="btnLeft" Content="Left" HorizontalAlignment="Left" Margin="280,583,0,0" VerticalAlignment="Top" Height="34" Width="59"                       RenderTransformOrigin="1.612,-1.239"/>
-        <Button x:ConnectionId='9' x:Name="btnRight" Content="Right" HorizontalAlignment="Left" Margin="360,583,0,0" VerticalAlignment="Top" Height="34" Width="59"                        RenderTransformOrigin="1.612,-1.239"/>
-        <Button x:ConnectionId='10' x:Name="btnUp" Content="Up" HorizontalAlignment="Left" Margin="439,583,0,0" VerticalAlignment="Top" Height="34" Width="61"                     RenderTransformOrigin="1.612,-1.239"/>
-        <Button x:ConnectionId='11' x:Name="btnDown" Content="Down" HorizontalAlignment="Left" Margin="202,583,0,0" VerticalAlignment="Top" Height="34" Width="61"                       RenderTransformOrigin="1.612,-1.239"/>
+        <Button x:ConnectionId='7' x:Name="btnLeft" Content="Left" HorizontalAlignment="Left" Margin="203,580,0,0" VerticalAlignment="Top" Height="34" Width="59" RenderTransformOrigin="1.612,-1.239" Background="#33EE40BE" BorderBrush="#FF39498F"                      />
+        <Button x:ConnectionId='8' x:Name="btnRight" Content="Right" HorizontalAlignment="Left" Margin="445,580,0,0" VerticalAlignment="Top" Height="34" Width="59" RenderTransformOrigin="1.612,-1.239" Background="#33EE40BE" BorderBrush="#FF39498F"                       />
+        <Button x:ConnectionId='9' x:Name="btnCentre" Content="Centre" HorizontalAlignment="Left" Margin="322,580,0,0" VerticalAlignment="Top" Height="34" Width="61" RenderTransformOrigin="1.612,-1.239" Background="#33F70BB6" BorderBrush="#FF39498F"                        />
+        <!-- <Button x:Name="btnDown" Content="Down" HorizontalAlignment="Left" Margin="202,583,0,0" VerticalAlignment="Top" Height="34" Width="61" RenderTransformOrigin="1.612,-1.239" BorderBrush="#FF39498F" Background="#33EE40BE" Click="btnDown_Click"/> -->
         <!-- Images-->
-        <Image x:ConnectionId='12' x:Name="imgTapped"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="308,291,0,0" RenderTransformOrigin="0.5,0.5" >
+        <Image x:ConnectionId='10' x:Name="imgTapped"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="308,475,0,0" RenderTransformOrigin="0.5,0.5" >
             <Image.RenderTransform>
                 <CompositeTransform/>
             </Image.RenderTransform>
         </Image>
         <!-- Timer TextBlock -->
-        <TextBlock x:ConnectionId='13' x:Name="txtbTimer" Margin="739,346,24,272"  Text=""/>
+        <TextBlock x:ConnectionId='11' x:Name="txtbTimer" Margin="739,346,24,272"  Text=""/>
     </Grid>
 </Page>
 

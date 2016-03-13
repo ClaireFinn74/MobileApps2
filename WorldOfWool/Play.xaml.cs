@@ -95,24 +95,26 @@ namespace WorldOfWool
             dispatcher();
         }
 
+        private void btnLeft_Click(object sender, RoutedEventArgs e)
+        {
+            //sbBtnRight.Stop();
+            sbBtnLeft.Begin();
+        }
+
         private void btnRight_Click(object sender, RoutedEventArgs e)
         {
+            //sbBtnLeft.Stop();
             sbBtnRight.Begin();
         }
 
-        private void btnUp_Click(object sender, RoutedEventArgs e)
+       private void btnCentre_Click(object sender, RoutedEventArgs e)
         {
-            sbBtnUp.Begin();
+            sbBtnCentre.Begin();
         }
 
-        private void btnDown_Click(object sender, RoutedEventArgs e)
+      /*  private void btnDown_Click(object sender, RoutedEventArgs e)
         {
             sbBtnDown.Begin();
-        }
-
-        private void btnLeft_Click(object sender, RoutedEventArgs e)
-        {
-            sbBtnLeft.Begin();
-        }
+        } */
     }
 }

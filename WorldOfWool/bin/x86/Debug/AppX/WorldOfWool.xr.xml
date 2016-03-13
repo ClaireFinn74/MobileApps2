@@ -14,6 +14,7 @@
     <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
       <RootProperty Name="RepeatBehavior" />
       <RootProperty Name="Children" />
+      <RootProperty Name="AutoReverse" />
       <RootMethod Name="GetTargetProperty" />
       <RootMethod Name="SetTargetProperty" />
       <RootMethod Name="GetTargetName" />
