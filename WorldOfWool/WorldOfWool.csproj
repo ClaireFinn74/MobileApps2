@@ -116,7 +116,13 @@
     <None Include="WorldOfWool_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\GrassTuft.png" />
+    <Content Include="ImagesPlay\GrassTuft.png" />
+    <Content Include="ImagesPlay\sheepDogBH.jpg" />
+    <Content Include="ImagesPlay\sheepDogBoxer.jpg" />
+    <Content Include="ImagesPlay\sheepDogBW.jpg" />
+    <Content Include="ImagesPlay\sheepDogCollie.jpg" />
+    <Content Include="ImagesPlay\sheepDogD.png" />
+    <Content Include="ImagesPlay\sheepDogStB.jpg" />
     <Content Include="imgMiniTapped.jpg" />
     <Content Include="Images\imgSheep.jpg" />
     <Content Include="Images\imgSleep.jpg" />

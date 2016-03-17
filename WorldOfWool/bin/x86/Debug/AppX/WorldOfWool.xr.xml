@@ -15,6 +15,7 @@
       <RootProperty Name="RepeatBehavior" />
       <RootProperty Name="Children" />
       <RootProperty Name="AutoReverse" />
+      <RootProperty Name="Duration" />
       <RootMethod Name="GetTargetProperty" />
       <RootMethod Name="SetTargetProperty" />
       <RootMethod Name="GetTargetName" />
@@ -72,13 +73,18 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RenderTransform" />
+      <RootProperty Name="UseLayoutRounding" />
       <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
       <RootProperty Name="Rotation" />
+      <RootProperty Name="ScaleX" />
+      <RootProperty Name="TranslateX" />
+      <RootProperty Name="TranslateY" />
     </RootType>
     <RootType FullName="WorldOfWool.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
+      <RootProperty Name="BeginTime" />
       <RootProperty Name="Duration" />
       <RootProperty Name="To" />
     </RootType>

@@ -28,11 +28,7 @@ namespace WorldOfWool
         public Play()
         {
             this.InitializeComponent();
-           /* sbGrass.Begin();
-            if (GrassTuft.Margin.Top == imgTapped.Margin.Top)
-            {
-                sbGrass.Stop();
-            }*/
+            sbFallingItems.Begin();
         }
 
         //timer variables
@@ -41,7 +37,7 @@ namespace WorldOfWool
         DateTimeOffset lastTime;
         DateTimeOffset stop;
         int ticks = 0;
-        int timesToTick = 2924;
+        int timesToTick = 2930;
 
         public void dispatcher()
         {
@@ -60,7 +56,7 @@ namespace WorldOfWool
         }
 
         //Setting tick event up
-        void dispatch_Tick(object sender, object e)
+        private async void dispatch_Tick(object sender, object e)
         {
             //Starts off at the current time
             DateTimeOffset time = DateTimeOffset.Now;
@@ -77,10 +73,12 @@ namespace WorldOfWool
                 time = stop;
                 dispatch.Stop();
                 span = stop - start;
-                txtbTimer.Text = "Time's up!! " + "\n"; 
+                txtbTimer.Text = "Time's up!! " + "\n";
+                var dialog = new MessageDialog("Oooh! Time is up! If you want to go to your highscores, press the highscores button!");
+                await dialog.ShowAsync();
             }
         }
-        
+
         //Back to the sheep
         private void btnBack_click(object sender, RoutedEventArgs e)
         {

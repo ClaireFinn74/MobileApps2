@@ -198,4 +198,3 @@ c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\obj
 c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\qualifiers.txt.intermediate
 c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\owner\documents\visual studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\WorldOfWool.csprojResolveAssemblyReference.cache
