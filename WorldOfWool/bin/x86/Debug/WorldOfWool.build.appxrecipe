@@ -342,26 +342,8 @@
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\imgMiniTapped.jpg">
-      <PackagePath>imgMiniTapped.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSheep.jpg">
-      <PackagePath>Images\imgSheep.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSleep.jpg">
-      <PackagePath>Images\imgSleep.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSleepSmile.jpg">
-      <PackagePath>Images\imgSleepSmile.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSmile.jpg">
-      <PackagePath>Images\imgSmile.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgTapped.jpg">
-      <PackagePath>Images\imgTapped.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\GrassTuft.png">
+      <PackagePath>Images\GrassTuft.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -389,6 +371,27 @@
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\imgMiniTapped.jpg">
+      <PackagePath>imgMiniTapped.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSheep.jpg">
+      <PackagePath>Images\imgSheep.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSleep.jpg">
+      <PackagePath>Images\imgSleep.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSleepSmile.jpg">
+      <PackagePath>Images\imgSleepSmile.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgSmile.jpg">
+      <PackagePath>Images\imgSmile.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\imgTapped.jpg">
+      <PackagePath>Images\imgTapped.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\WorldOfWool.xr.xml">
       <PackagePath>WorldOfWool.xr.xml</PackagePath>

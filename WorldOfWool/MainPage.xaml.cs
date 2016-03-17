@@ -36,7 +36,7 @@ namespace WorldOfWool
             Frame.Navigate(typeof(Play));
         }
 
-
+        int boredSheep = 20;
         int happiness = 0;
         private void btnLove_click (object sender, RoutedEventArgs e)
         {
@@ -50,7 +50,9 @@ namespace WorldOfWool
                 {
                 sbSheep.Stop(); //stop storyboard with the bored sheep
                 sbSmile.Begin(); //begin the storyboard with the smiling sheep
-                }
+                btnPlay.Opacity = 100;
+                btnPlay.IsEnabled = true;
+            }
             else
                 {
                     happiness--; //stop after 100

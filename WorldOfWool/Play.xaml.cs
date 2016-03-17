@@ -28,6 +28,11 @@ namespace WorldOfWool
         public Play()
         {
             this.InitializeComponent();
+           /* sbGrass.Begin();
+            if (GrassTuft.Margin.Top == imgTapped.Margin.Top)
+            {
+                sbGrass.Stop();
+            }*/
         }
 
         //timer variables
@@ -85,7 +90,7 @@ namespace WorldOfWool
         //Pop-up box for the instructions, loads asynchronously
         private async void btnInstructions_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new MessageDialog("So, trouble sleeping? \n Try to tap as many sheep as you possibly can within the time limit! \n That should get you right to sleep! \n Good Luck!!");
+            var dialog = new MessageDialog("Try to avoid all of the falling sheep dogs coming to round you up using the Left, Right and Centre buttons to move around! \n Good Luck!!");
             await dialog.ShowAsync();
         }
 
@@ -97,13 +102,11 @@ namespace WorldOfWool
 
         private void btnLeft_Click(object sender, RoutedEventArgs e)
         {
-            //sbBtnRight.Stop();
             sbBtnLeft.Begin();
         }
 
         private void btnRight_Click(object sender, RoutedEventArgs e)
         {
-            //sbBtnLeft.Stop();
             sbBtnRight.Begin();
         }
 
@@ -112,9 +115,6 @@ namespace WorldOfWool
             sbBtnCentre.Begin();
         }
 
-      /*  private void btnDown_Click(object sender, RoutedEventArgs e)
-        {
-            sbBtnDown.Begin();
-        } */
+      
     }
 }

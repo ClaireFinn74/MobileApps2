@@ -85,8 +85,8 @@
    
     <Grid x:ConnectionId='5' x:Name="grdCanvas" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-168,-88,-627,10" d:IsLocked="True">
         <TextBlock x:ConnectionId='6' Name="txtbHappiness" Margin="682,276,323,379" Width="150" RenderTransformOrigin="-1.229,1.058" d:IsLocked="True"/>
-        <Button x:ConnectionId='7' x:Name="btnLove" Content="Gimmie Love!" HorizontalAlignment="Left" Margin="783,222,0,0" VerticalAlignment="Top"                        Height="49" Background="#FFF343EB" BorderThickness="6" RequestedTheme="Light" FontSize="26.667" BorderBrush="#FF3F2693" d:IsLocked="True"/>
-        <Button x:ConnectionId='8' x:Name="btnPlay" Content="Play" HorizontalAlignment="Left" Margin="464.333,563.354,0,0" VerticalAlignment="Top"                       Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" d:IsLocked="True">
+        <Button x:ConnectionId='7' x:Name="btnLove" x:Uid="uidBtnLove" HorizontalAlignment="Left" Margin="783,222,0,0" VerticalAlignment="Top"                        Height="60" Background="#FFF343EB" BorderThickness="6" RequestedTheme="Light" FontSize="26.667" BorderBrush="#FF3F2693" d:IsLocked="True"/>
+        <Button x:ConnectionId='8' x:Name="btnPlay" x:Uid="uidBtnPlay" HorizontalAlignment="Left" Margin="464.333,563.354,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="30"                       IsEnabled="False" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" d:IsLocked="True">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-0.085"/>
             </Button.RenderTransform>

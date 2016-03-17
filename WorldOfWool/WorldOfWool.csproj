@@ -110,9 +110,13 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+    <PRIResource Include="Strings\ga-IE\Resources.resw" />
+    <PRIResource Include="Strings\fr-FR\Resources.resw" />
     <None Include="WorldOfWool_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\GrassTuft.png" />
     <Content Include="imgMiniTapped.jpg" />
     <Content Include="Images\imgSheep.jpg" />
     <Content Include="Images\imgSleep.jpg" />
