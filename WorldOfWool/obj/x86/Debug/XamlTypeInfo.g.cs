@@ -132,17 +132,19 @@ namespace WorldOfWool.WorldOfWool_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
-            _typeNameTable[0] = "WorldOfWool.MainPage";
+            _typeNameTable = new string[5];
+            _typeNameTable[0] = "WorldOfWool.Game";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "WorldOfWool.Play";
+            _typeNameTable[3] = "WorldOfWool.MainPage";
+            _typeNameTable[4] = "WorldOfWool.Play";
 
-            _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::WorldOfWool.MainPage);
+            _typeTable = new global::System.Type[5];
+            _typeTable[0] = typeof(global::WorldOfWool.Game);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::WorldOfWool.Play);
+            _typeTable[3] = typeof(global::WorldOfWool.MainPage);
+            _typeTable[4] = typeof(global::WorldOfWool.Play);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -177,8 +179,9 @@ namespace WorldOfWool.WorldOfWool_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::WorldOfWool.MainPage(); }
-        private object Activate_3_Play() { return new global::WorldOfWool.Play(); }
+        private object Activate_0_Game() { return new global::WorldOfWool.Game(); }
+        private object Activate_3_MainPage() { return new global::WorldOfWool.MainPage(); }
+        private object Activate_4_Play() { return new global::WorldOfWool.Play(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -190,9 +193,9 @@ namespace WorldOfWool.WorldOfWool_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  WorldOfWool.MainPage
+            case 0:   //  WorldOfWool.Game
                 userType = new global::WorldOfWool.WorldOfWool_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_Game;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -205,9 +208,16 @@ namespace WorldOfWool.WorldOfWool_XamlTypeInfo
                 xamlType = new global::WorldOfWool.WorldOfWool_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  WorldOfWool.Play
+            case 3:   //  WorldOfWool.MainPage
                 userType = new global::WorldOfWool.WorldOfWool_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Play;
+                userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  WorldOfWool.Play
+                userType = new global::WorldOfWool.WorldOfWool_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_Play;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

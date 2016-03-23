@@ -1,0 +1,119 @@
+﻿<Page
+    x:Class="WorldOfWool.Game"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorldOfWool"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-368,-178">
+        <!-- Left, Right, Up and Down buttons-->
+        <Button x:ConnectionId='1' x:Name="btnLeft" x:Uid="uidBtnLeft" HorizontalAlignment="Left" Margin="196,580,0,0" VerticalAlignment="Top" Height="34" Width="84" RenderTransformOrigin="1.612,-1.239" Background="#33EE40BE" BorderBrush="#FF39498F"                      />
+        <Button x:ConnectionId='2' x:Name="btnRight" x:Uid="uidBtnRight" HorizontalAlignment="Left" Margin="436,580,0,0" VerticalAlignment="Top" Height="34" Width="80" RenderTransformOrigin="1.612,-1.239" Background="#33EE40BE" BorderBrush="#FF39498F"                       />
+        <Button x:ConnectionId='3' x:Name="btnCentre" x:Uid="uidBtnCentre" HorizontalAlignment="Left" Margin="315,580,0,0" VerticalAlignment="Top" Height="34" Width="71" RenderTransformOrigin="1.612,-1.239" Background="#33F70BB6" BorderBrush="#FF39498F"                        />
+
+        <!-- Back Button, Instructions Button -->
+        <Button x:ConnectionId='4' x:Name="btnBack" x:Uid="uidBtnBack" HorizontalAlignment="Left" Margin="169,625,0,0" VerticalAlignment="Top" Height="39" Width="98"                       RenderTransformOrigin="1.612,-1.239"/>
+        <Button x:ConnectionId='5' x:Name="btnInstructions" x:Uid="uidBtnInstructions" HorizontalAlignment="Left" Margin="418,631,0,0" VerticalAlignment="Top" Height="37" Width="98"                               RenderTransformOrigin="1.612,-1.239"/>
+
+        <Image x:ConnectionId='6' x:Name="imgTapped"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="308,475,0,0">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <!-- Left Sheep Images -->
+        <Image x:ConnectionId='7' x:Name="imgSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="485,357,0,0"  Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='8' x:Name="imgSheep"  Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="349,337,0,0" Visibility="Collapsed" >
+        </Image>
+        <Image x:ConnectionId='9' x:Name="imgSleep"  Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="471,194,0,0"  Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='10' x:Name="imgSleepSmile"  Source="Images/imgSleepSmile.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="189,395,0,0" Visibility="Collapsed" >
+        </Image>
+        <Image x:ConnectionId='11' x:Name="imgTappedLeft"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="613,407,0,0"  Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='12' x:Name="imgSmile2"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="579.397,268.381,0,0"  Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-0.388"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:ConnectionId='13' x:Name="imgSheep2"  Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="214,306,0,0" Visibility="Collapsed" >
+        </Image>
+        <Image x:ConnectionId='14' x:Name="imgTappedLeft2"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="348,212,0,0"  Visibility="Collapsed">
+        </Image>
+
+        <!-- Centre Sheep Images -->
+        <Image x:ConnectionId='15' x:Name="Smile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="83" Margin="422,270,0,0"  Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='16' x:Name="Sheep"  Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="219,192,0,0" Visibility="Collapsed" >
+        </Image>
+        <Image x:ConnectionId='17' x:Name="Sleep"  Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="92,199,0,0"  Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='18' x:Name="SleepSmile"  Source="Images/imgSleepSmile.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="95,303,0,0" Visibility="Collapsed" >
+        </Image>
+        <Image x:ConnectionId='19' x:Name="Tapped"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="628,179,0,0"  Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='20' x:Name="Smile2"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="-12,194,0,0"  Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='21' x:Name="Sheep2"  Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="3,283,0,0" Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='22' x:Name="Tapped2"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="389,405,0,0"  Visibility="Collapsed">
+        </Image>
+        <!-- Right Sheep Images -->
+        <Image x:ConnectionId='23' x:Name="RightSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="16,88,0,0"  Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='24' x:Name="RightSheep"  Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="575,77,0,0" Visibility="Collapsed" >
+        </Image>
+        <Image x:ConnectionId='25' x:Name="RightSleep"  Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="468,85,0,0"  Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='26' x:Name="RightSleepSmile"  Source="Images/imgSleepSmile.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="285,390,0,0" Visibility="Collapsed" RenderTransformOrigin="3.152,-2.606" >
+        </Image>
+        <Image x:ConnectionId='27' x:Name="RightTappedLeft"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="356,121,0,0"  Visibility="Collapsed" RenderTransformOrigin="-2.252,-2.526">
+        </Image>
+        <Image x:ConnectionId='28' x:Name="RightSmile2"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="237,116,0,0"  Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='29' x:Name="RightSheep2"  Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="107,121,0,0" Visibility="Collapsed" >
+        </Image>
+        <Image x:ConnectionId='30' x:Name="RightTapped2"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="285,270,0,0"  Visibility="Collapsed">
+        </Image>
+        <!-- Sheep Dog Images, sheep has to avoid -->
+        <Image x:ConnectionId='31' x:Name="BassettHound"  Source="ImagesPlay/sheepDogBH.jpg" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="479,25,0,0" Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='32' x:Name="BorderCollie"  Source="ImagesPlay/sheepDogBW.jpg" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="293.788,26.687,0,0" UseLayoutRounding="False" d:LayoutRounding="Auto" Visibility="Collapsed" >
+        </Image>
+        <Image x:ConnectionId='33' x:Name="Collie" Source="ImagesPlay/sheepDogCollie.jpg" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="347,22,0,0" Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='34' x:Name="StBernard" Source="ImagesPlay/sheepDogStB.jpg" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="179,25,0,0" Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='35' x:Name="Dalmation" Source="ImagesPlay/sheepDogD.png" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="482,25,0,0" Visibility="Collapsed">
+        </Image>
+        <Image x:ConnectionId='36' x:Name="Boxer" Source="ImagesPlay/sheepDogBoxer.jpg" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="29,475,0,0" Visibility="Collapsed"/>
+
+        <!-- Timer TextBlock -->
+        <TextBlock x:ConnectionId='37' x:Name="txtbTimer" Margin="203,254,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
+        <!-- TextBlocks -->
+        <TextBlock x:ConnectionId='38' x:Name="txtbRight" Margin="203,100,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='39' x:Name="txtbCenter" Margin="203,300,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='40' x:Name="txtbLeft" Margin="203,300,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='41' x:Name="txtbRight2" Margin="203,100,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='42' x:Name="txtbCenter2" Margin="203,300,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='43' x:Name="txtbLeft2" Margin="203,300,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
+    </Grid>
+
+    <Page.Resources>
+        <Storyboard x:ConnectionId='44' x:Name="sbBtnRight" AutoReverse="False">
+            <DoubleAnimation Duration="0:0:0.1" To="141.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
+
+        </Storyboard>
+        <Storyboard x:ConnectionId='45' x:Name="sbBtnLeft" AutoReverse="False">
+            <DoubleAnimation Duration="0:0:0.1" To="-141.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
+        </Storyboard>
+
+        <Storyboard x:ConnectionId='46' x:Name="sbBtnCentre" AutoReverse="False">
+            <DoubleAnimation Duration="0:0:0.1" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimised="True"/>
+        </Storyboard>
+
+    </Page.Resources>
+</Page>
+

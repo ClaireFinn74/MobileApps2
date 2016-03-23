@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-17T22:31:28.188</Modified>
+      <Modified>2016-03-23T21:45:55.077</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\WorldOfWool.exe">
       <PackagePath>entrypoint\WorldOfWool.exe</PackagePath>
-      <Modified>2016-03-17T22:31:25.529</Modified>
+      <Modified>2016-03-23T21:45:54.227</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -460,11 +460,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ImagesPlay\GrassTuft.png">
       <PackagePath>ImagesPlay\GrassTuft.png</PackagePath>
-      <Modified>2016-03-16T11:39:11.592</Modified>
+      <Modified>2016-03-22T20:02:57.654</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ImagesPlay\sheepDogD.png">
       <PackagePath>ImagesPlay\sheepDogD.png</PackagePath>
-      <Modified>2016-03-17T21:33:10.352</Modified>
+      <Modified>2016-03-22T20:02:56.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -502,23 +502,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ImagesPlay\sheepDogBH.jpg">
       <PackagePath>ImagesPlay\sheepDogBH.jpg</PackagePath>
-      <Modified>2016-03-17T17:31:21.997</Modified>
+      <Modified>2016-03-22T20:02:58.144</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ImagesPlay\sheepDogBoxer.jpg">
       <PackagePath>ImagesPlay\sheepDogBoxer.jpg</PackagePath>
-      <Modified>2016-03-17T21:33:10.342</Modified>
+      <Modified>2016-03-22T20:02:59.945</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ImagesPlay\sheepDogBW.jpg">
       <PackagePath>ImagesPlay\sheepDogBW.jpg</PackagePath>
-      <Modified>2016-03-17T17:31:22.006</Modified>
+      <Modified>2016-03-22T20:03:00.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ImagesPlay\sheepDogCollie.jpg">
       <PackagePath>ImagesPlay\sheepDogCollie.jpg</PackagePath>
-      <Modified>2016-03-17T17:31:22.015</Modified>
+      <Modified>2016-03-22T20:02:56.116</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ImagesPlay\sheepDogStB.jpg">
       <PackagePath>ImagesPlay\sheepDogStB.jpg</PackagePath>
-      <Modified>2016-03-17T17:31:21.988</Modified>
+      <Modified>2016-03-22T20:02:57.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\imgMiniTapped.jpg">
       <PackagePath>imgMiniTapped.jpg</PackagePath>
@@ -550,7 +550,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\WorldOfWool.xr.xml">
       <PackagePath>WorldOfWool.xr.xml</PackagePath>
-      <Modified>2016-03-17T20:56:00.683</Modified>
+      <Modified>2016-03-23T21:34:13.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -558,11 +558,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-03-17T22:31:27.708</Modified>
+      <Modified>2016-03-23T21:41:30.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Debug\Core\WorldOfWool.exe">
       <PackagePath>WorldOfWool.exe</PackagePath>
-      <Modified>2016-03-17T22:31:28.168</Modified>
+      <Modified>2016-03-23T21:45:55.060</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

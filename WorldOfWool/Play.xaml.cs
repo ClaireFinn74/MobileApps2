@@ -31,13 +31,17 @@ namespace WorldOfWool
             sbFallingItems.Begin();
         }
 
+        int energy = 0;
+
+
+
         //timer variables
         DispatcherTimer dispatch;
         DateTimeOffset start;
         DateTimeOffset lastTime;
         DateTimeOffset stop;
         int ticks = 0;
-        int timesToTick = 2930;
+        int timesToTick = 500;
 
         public void dispatcher()
         {
@@ -74,22 +78,12 @@ namespace WorldOfWool
                 dispatch.Stop();
                 span = stop - start;
                 txtbTimer.Text = "Time's up!! " + "\n";
-                var dialog = new MessageDialog("Oooh! Time is up! If you want to go to your highscores, press the highscores button!");
+                energy += 20;
+                txtbScore.Text = energy.ToString() + " " + " " + "I've got tonnes of Energy now!! "; //displays textbox
+                var dialog = new MessageDialog("All fed! Now I can play!");
                 await dialog.ShowAsync();
+                Frame.Navigate(typeof(MainPage));
             }
-        }
-
-        //Back to the sheep
-        private void btnBack_click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(MainPage));
-        }
-
-        //Pop-up box for the instructions, loads asynchronously
-        private async void btnInstructions_Click(object sender, RoutedEventArgs e)
-        {
-            var dialog = new MessageDialog("Try to avoid all of the falling sheep dogs coming to round you up using the Left, Right and Centre buttons to move around! \n Good Luck!!");
-            await dialog.ShowAsync();
         }
 
         //Starting the timer when the page has loaded
@@ -98,20 +92,14 @@ namespace WorldOfWool
             dispatcher();
         }
 
-        private void btnLeft_Click(object sender, RoutedEventArgs e)
+        //Pop-up box for the instructions, loads asynchronously
+        private async void btnInstructions_Click(object sender, RoutedEventArgs e)
         {
-            sbBtnLeft.Begin();
+            var dialog = new MessageDialog("Sit back and let it rain grass so I have enough energy to play!");
+            await dialog.ShowAsync();
         }
 
-        private void btnRight_Click(object sender, RoutedEventArgs e)
-        {
-            sbBtnRight.Begin();
-        }
-
-       private void btnCentre_Click(object sender, RoutedEventArgs e)
-        {
-            sbBtnCentre.Begin();
-        }
+        
 
       
     }

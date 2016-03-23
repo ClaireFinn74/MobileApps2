@@ -137,6 +137,10 @@
     <value>Centre</value>
     <comment>Moves the sheep to the centre of the screen</comment>
   </data>
+  <data name="uidBtnFeedMe.Content" xml:space="preserve">
+    <value>To the field to feed me!</value>
+    <comment>To feed the sheep!</comment>
+  </data>
   <data name="uidBtnInstructions.Content" xml:space="preserve">
     <value>Instructions</value>
     <comment>A pop-up box explaining how to play the game</comment>
@@ -151,7 +155,7 @@
   </data>
   <data name="uidBtnPlay.Content" xml:space="preserve">
     <value>Play</value>
-    <comment>To play the game!</comment>
+    <comment>To Play the game</comment>
   </data>
   <data name="uidBtnRight.Content" xml:space="preserve">
     <value>Right</value>

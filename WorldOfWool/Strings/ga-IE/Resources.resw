@@ -137,6 +137,10 @@
     <value>Lár</value>
     <comment>Bog na caoirigh go dtí lár an scáileáin</comment>
   </data>
+  <data name="uidBtnFeedMe.Content" xml:space="preserve">
+    <value>Imirt</value>
+    <comment>A imirt an cluiche</comment>
+  </data>
   <data name="uidBtnInstructions.Content" xml:space="preserve">
     <value>Treoracha</value>
     <comment>Bosca aníos ag míniú conas a imirt an cluiche</comment>

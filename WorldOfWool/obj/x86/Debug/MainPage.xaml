@@ -1,4 +1,4 @@
-﻿<Page x:ConnectionId='1' x:Name="btnHowToPlay1"
+﻿<Page x:ConnectionId='1'
     x:Class="WorldOfWool.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -82,20 +82,21 @@
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
     </Page.Resources>
-   
+
     <Grid x:ConnectionId='5' x:Name="grdCanvas" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-168,-88,-627,10" d:IsLocked="True">
         <TextBlock x:ConnectionId='6' Name="txtbHappiness" Margin="682,276,323,379" Width="150" RenderTransformOrigin="-1.229,1.058" d:IsLocked="True"/>
         <Button x:ConnectionId='7' x:Name="btnLove" x:Uid="uidBtnLove" HorizontalAlignment="Left" Margin="783,222,0,0" VerticalAlignment="Top"                        Height="60" Background="#FFF343EB" BorderThickness="6" RequestedTheme="Light" FontSize="26.667" BorderBrush="#FF3F2693" d:IsLocked="True"/>
-        <Button x:ConnectionId='8' x:Name="btnPlay" x:Uid="uidBtnPlay" HorizontalAlignment="Left" Margin="464.333,563.354,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="30"                       IsEnabled="False" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" d:IsLocked="True">
+        <Button x:ConnectionId='8' x:Name="btnFeedMe" x:Uid="uidBtnFeedMe" HorizontalAlignment="Left" Margin="464.333,563.354,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="30"                         IsEnabled="False" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" d:IsLocked="True">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-0.085"/>
             </Button.RenderTransform>
         </Button>
-        <Image x:ConnectionId='9' x:Name="imgTapped"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" />
-        <Image x:ConnectionId='10' x:Name="imgSleepSmile"  Source="Images/imgSleepSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
-        <Image x:ConnectionId='11' x:Name="imgSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
-        <Image x:ConnectionId='12'  x:Name="imgSleep" Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
-        <Image x:ConnectionId='13' x:Name="imgSheep"                           Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
+        <Button x:ConnectionId='9' x:Name="btnPlay" x:Uid="uidBtnPlay" HorizontalAlignment="Left" Margin="10,563,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="30"                       IsEnabled="False" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" d:IsLocked="True"/>
+        <Image x:ConnectionId='10' x:Name="imgTapped"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" />
+        <Image x:ConnectionId='11' x:Name="imgSleepSmile"  Source="Images/imgSleepSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
+        <Image x:ConnectionId='12' x:Name="imgSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
+        <Image x:ConnectionId='13'  x:Name="imgSleep" Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
+        <Image x:ConnectionId='14' x:Name="imgSheep"                           Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
     </Grid>
 </Page>
 

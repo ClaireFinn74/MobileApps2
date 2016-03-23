@@ -137,6 +137,10 @@
     <value>Centre</value>
     <comment>Déplace le mouton au centre de l'écran</comment>
   </data>
+  <data name="uidBtnFeedMe.Content" xml:space="preserve">
+    <value>Sur le terrain pour me nourrir!</value>
+    <comment>Pour nourrir les moutons!</comment>
+  </data>
   <data name="uidBtnInstructions.Content" xml:space="preserve">
     <value>Instructions</value>
     <comment>Une boîte de pop-up expliquant comment jouer le jeu</comment>
@@ -150,8 +154,8 @@
     <comment>Augmente le bonheur déverrouillage donc le bouton de lecture!</comment>
   </data>
   <data name="uidBtnPlay.Content" xml:space="preserve">
-    <value>Jouer</value>
-    <comment>Pour jouer le jeu</comment>
+    <value>Joer</value>
+    <comment>Pour Jouer le jeu</comment>
   </data>
   <data name="uidBtnRight.Content" xml:space="preserve">
     <value>à droite</value>
