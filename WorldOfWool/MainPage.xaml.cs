@@ -70,6 +70,12 @@ namespace WorldOfWool
         {
            //sbTapped.Begin();
         }
+
+        private void FriendsCount_Click(object sender, RoutedEventArgs e)
+        {
+            //display the text
+            txtbFriends.Text = "You now have " + Globalclass.friends.ToString();
+        }
     }
     
 }

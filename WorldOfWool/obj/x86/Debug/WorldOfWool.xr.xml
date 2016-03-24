@@ -34,6 +34,7 @@
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Content" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
@@ -54,8 +55,8 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Name" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Name" />
       <RootProperty Name="RenderTransformOrigin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">

@@ -92,56 +92,78 @@ namespace WorldOfWool
 
         private async void btnLeft_Click(object sender, RoutedEventArgs e)
         {
+            //Starts the sheep moving left storyboard
             sbBtnLeft.Begin();
+            //Starts a random variable
             Random random = new Random();
-            Image[] ImageArray = {Boxer, imgSleep, imgSheep, imgSmile, imgSleepSmile, imgTappedLeft, imgSheep2, imgSmile2, imgTappedLeft2, BorderCollie};
+            //Starts an array of images so the user can get a random image generated
+            Image[] ImageArray = { Boxer, imgSleep, imgSheep, imgSmile, imgSleepSmile, imgTappedLeft, imgSheep2, imgSmile2, imgTappedLeft2, BorderCollie };
+            //Randomizes the array
             Image RandomImage = ImageArray[random.Next(0, ImageArray.Length)];
+            //If the image is the Boxer, boxer image becomes visible, Message box appears which ends the game                 
             if (RandomImage == Boxer)
             {
-            Boxer.Visibility = Visibility.Visible;
-            var dialog = new MessageDialog("Ooh the Boxer chased you out! Hard Luck");
-            await dialog.ShowAsync();
-            Frame.Navigate(typeof(MainPage));
+                Boxer.Visibility = Visibility.Visible;
+                var dialog = new MessageDialog("Ooh the Boxer chased you out! Hard Luck");
+                await dialog.ShowAsync();
+                //When you press Close on the message box it navigates back to the Main Page
+                Frame.Navigate(typeof(MainPage));
             }
             else if (RandomImage == imgSleep)
             {
                 imgSleep.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
-            else if(RandomImage == imgSheep)
+            else if (RandomImage == imgSheep)
             {
                 imgSheep.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == imgSmile)
             {
                 imgSmile.Visibility = Visibility.Visible;
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == imgSleepSmile)
             {
                 imgSleepSmile.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == imgTappedLeft)
             {
                 imgTappedLeft.Visibility = Visibility.Visible;
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == imgSheep2)
             {
                 imgSheep2.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == imgSmile2)
             {
                 imgSmile2.Visibility = Visibility.Visible;
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == imgTappedLeft2)
             {
                 imgTappedLeft2.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == BorderCollie)
             {
@@ -156,10 +178,10 @@ namespace WorldOfWool
         {
             sbBtnRight.Begin();
             Random random = new Random();
-            Image[] ImageArray = {Collie, RightSleep, RightSheep, RightSmile, RightSleepSmile, RightTappedLeft, RightSheep2, RightSmile2, RightTapped2, BassettHound };
+            Image[] ImageArray = { Collie, RightSleep, RightSheep, RightSmile, RightSleepSmile, RightTappedLeft, RightSheep2, RightSmile2, RightTapped2, BassettHound };
             Image RandomImage = ImageArray[random.Next(0, ImageArray.Length)];
             if (RandomImage == BassettHound)
-            { 
+            {
                 BassettHound.Visibility = Visibility.Visible;
                 var dialog = new MessageDialog("Ooh the Basset Hound chased you out! Hard Luck");
                 await dialog.ShowAsync();
@@ -169,41 +191,57 @@ namespace WorldOfWool
             {
                 RightSleep.Visibility = Visibility.Visible;
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == RightSheep)
             {
                 RightSheep.Visibility = Visibility.Visible;
                 txtbRight.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == RightSmile)
             {
                 RightSmile.Visibility = Visibility.Visible;
                 txtbRight2.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == RightSleepSmile)
             {
                 RightSleepSmile.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == RightTappedLeft)
             {
                 RightTappedLeft.Visibility = Visibility.Visible;
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == RightSheep2)
             {
                 RightSheep2.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == RightSmile2)
             {
                 RightSmile2.Visibility = Visibility.Visible;
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == RightTapped2)
             {
                 RightTapped2.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             if (RandomImage == Collie)
             {
@@ -218,7 +256,7 @@ namespace WorldOfWool
         {
             sbBtnCentre.Begin();
             Random random = new Random();
-            Image[] ImageArray = {StBernard, Sleep, Sheep, Smile, SleepSmile, Tapped, Sheep2, Smile2, Tapped2, Dalmation };
+            Image[] ImageArray = { StBernard, Sleep, Sheep, Smile, SleepSmile, Tapped, Sheep2, Smile2, Tapped2, Dalmation };
             Image RandomImage = ImageArray[random.Next(0, ImageArray.Length)];
             if (RandomImage == StBernard)
             {
@@ -231,41 +269,57 @@ namespace WorldOfWool
             {
                 imgSleep.Visibility = Visibility.Visible;
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == Sheep)
             {
                 Sheep.Visibility = Visibility.Visible;
                 txtbCenter.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == Smile)
             {
                 Smile.Visibility = Visibility.Visible;
                 txtbCenter2.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == SleepSmile)
             {
                 SleepSmile.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == Tapped)
             {
                 RightTappedLeft.Visibility = Visibility.Visible;
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == Sheep2)
             {
                 RightSheep2.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == Smile2)
             {
                 RightSmile2.Visibility = Visibility.Visible;
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == Tapped2)
             {
                 RightTapped2.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                Globalclass.friends = Globalclass.friends + 1;
+                txtbFriends.Text = Globalclass.friends.ToString();
             }
             else if (RandomImage == Dalmation)
             {
@@ -281,5 +335,8 @@ namespace WorldOfWool
         {
             dispatcher();
         }
-    }
+
+         
+        
+        }
 }

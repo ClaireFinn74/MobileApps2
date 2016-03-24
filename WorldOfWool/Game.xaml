@@ -99,6 +99,8 @@
         <TextBlock x:Name="txtbRight2" Margin="203,100,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
         <TextBlock x:Name="txtbCenter2" Margin="203,300,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
         <TextBlock x:Name="txtbLeft2" Margin="203,300,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
+        <!-- TextBlock for score -->
+        <TextBlock x:Name="txtbFriends" Margin="61,642,569,0"  Text="" Height="37" Width="98" VerticalAlignment="Top"/>
     </Grid>
 
     <Page.Resources>

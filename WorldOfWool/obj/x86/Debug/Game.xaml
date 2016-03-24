@@ -99,18 +99,20 @@
         <TextBlock x:ConnectionId='41' x:Name="txtbRight2" Margin="203,100,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
         <TextBlock x:ConnectionId='42' x:Name="txtbCenter2" Margin="203,300,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
         <TextBlock x:ConnectionId='43' x:Name="txtbLeft2" Margin="203,300,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
+        <!-- TextBlock for score -->
+        <TextBlock x:ConnectionId='44' x:Name="txtbFriends" Margin="61,642,569,0"  Text="" Height="37" Width="98" VerticalAlignment="Top"/>
     </Grid>
 
     <Page.Resources>
-        <Storyboard x:ConnectionId='44' x:Name="sbBtnRight" AutoReverse="False">
+        <Storyboard x:ConnectionId='45' x:Name="sbBtnRight" AutoReverse="False">
             <DoubleAnimation Duration="0:0:0.1" To="141.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
 
         </Storyboard>
-        <Storyboard x:ConnectionId='45' x:Name="sbBtnLeft" AutoReverse="False">
+        <Storyboard x:ConnectionId='46' x:Name="sbBtnLeft" AutoReverse="False">
             <DoubleAnimation Duration="0:0:0.1" To="-141.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
         </Storyboard>
 
-        <Storyboard x:ConnectionId='46' x:Name="sbBtnCentre" AutoReverse="False">
+        <Storyboard x:ConnectionId='47' x:Name="sbBtnCentre" AutoReverse="False">
             <DoubleAnimation Duration="0:0:0.1" To="0" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimised="True"/>
         </Storyboard>
 

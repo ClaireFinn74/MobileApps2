@@ -8,46 +8,46 @@
     mc:Ignorable="d" Loaded="Page_Loaded">
 
     <Page.Resources>
-        <Storyboard x:Name="sbFallingItems" Duration="0:0:8">
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="2680" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre1" d:IsOptimized="True"/>
+        <Storyboard x:Name="sbFallingItems" Duration="0:0:3" RepeatBehavior="Forever">
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="2680" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre1" d:IsOptimized="True"/>
             <!-- Tuft of grass falls from the Left -->
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="920" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft1" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="920" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft1" d:IsOptimized="True"/>
             <!-- Tuft of grass falls from the Right -->
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="909.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight1" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="909.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight1" d:IsOptimized="True"/>
             <!-- A St. Bernard appears to the Left, dodge it! -->
             <!-- <DoubleAnimation BeginTime="0:0:5" Duration="0:0:2" To="949.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgStBernard" d:IsOptimized="True"/> -->
             <!-- Tuft of grass falls from the Left -->
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="885.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft12" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="885.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft12" d:IsOptimized="True"/>
             <!-- Tuft of grass falls from the Right -->
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="845.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight12" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="845.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight12" d:IsOptimized="True"/>
             <!-- A Bassett Hound appears to the Right, dodge it! -->
            <!-- <DoubleAnimation  BeginTime="0:0:18" Duration="0:0:4" To="906.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgBassetHound" d:IsOptimized="True"/> -->
             <!-- Tuft of grass falls from the centre -->
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="880" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre12" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="880" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre12" d:IsOptimized="True"/>
             <!-- Tuft of grass falls from the Right -->
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="866.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre26" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="866.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre26" d:IsOptimized="True"/>
             <!-- Tuft of grass falls from the centre -->
-            <DoubleAnimation  BeginTime="0:0:1" Duration="0:0:5" To="864" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight26" d:IsOptimized="True"/>
+            <DoubleAnimation  BeginTime="0:0:1" Duration="0:0:2" To="864" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight26" d:IsOptimized="True"/>
             <!-- Tuft of grass falls from the Left -->
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="861.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft26" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="861.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft26" d:IsOptimized="True"/>
             <!-- A Black and White dog appears to the Left, dodge it! -->
             <!-- <DoubleAnimation BeginTime="0:0:28.7" Duration="0:0:5" To="952" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgBlackAndWhite" d:IsOptimized="True"/> -->
             <!-- Tuft of grass falls from the centre -->
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="891.391" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre38" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="891.391" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre38" d:IsOptimized="True"/>
             <!-- A Collie appears to the Left, dodge it! -->
             <!-- <DoubleAnimation BeginTime="0:0:32.6" Duration="0:0:5" To="949.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgCollie" d:IsOptimized="True"/> -->
             <!-- Tuft of grass falls from the Right -->
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="906.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight38" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="906.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight38" d:IsOptimized="True"/>
             <!-- Tuft of grass falls from the Left -->
-            <DoubleAnimation BeginTime="0:0:1"  Duration="0:0:5"  To="759.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft38" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1"  Duration="0:0:2"  To="759.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft38" d:IsOptimized="True"/>
             <!-- A Dalmation appears to the Right, dodge it! -->
             <!-- <DoubleAnimation BeginTime="0:0:38" Duration="0:0:4" To="1002.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgDalmation" d:IsOptimized="True"/> -->
             <!-- Tuft of grass falls from the Right -->
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="994.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight48" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="994.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight48" d:IsOptimized="True"/>
             <!-- Tuft of grass falls from the Centre -->
-            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:5" To="758.057" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre48" d:IsOptimized="True"/>
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="758.057" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre48" d:IsOptimized="True"/>
             <!-- Tuft of grass falls from the Left -->
-            <DoubleAnimation  BeginTime="0:0:1" Duration="0:0:5" To="818.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft48" d:IsOptimized="True"/>
+            <DoubleAnimation  BeginTime="0:0:1" Duration="0:0:2" To="818.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft48" d:IsOptimized="True"/>
             <!-- A Boxer appears to the Left, dodge it! -->
             <!--  <DoubleAnimation BeginTime="0:0:50.3" Duration="0:0:4" To="784" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgBoxer" d:IsOptimized="True"/> -->
         </Storyboard>
