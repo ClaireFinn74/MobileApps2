@@ -9,5 +9,6 @@ namespace WorldOfWool
     class Globalclass
     {
         public static int friends;
+        public static int energy = 0;
     }
 }

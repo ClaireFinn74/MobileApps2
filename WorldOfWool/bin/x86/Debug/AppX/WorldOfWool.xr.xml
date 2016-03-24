@@ -58,6 +58,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Name" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
       <RootProperty Name="Rotation" />

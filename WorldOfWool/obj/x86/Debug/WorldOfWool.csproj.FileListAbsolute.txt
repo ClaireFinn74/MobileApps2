@@ -203,4 +203,3 @@ C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\obj
 C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\Game.g.cs
 C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\Game.xaml
 C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\Game.xbf
-C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\obj\x86\Debug\WorldOfWool.csprojResolveAssemblyReference.cache

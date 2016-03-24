@@ -149,6 +149,6 @@
         <!-- Timer TextBlock -->
         <TextBlock x:Name="txtbTimer" Margin="203,254,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
         <!-- Score TextBlock -->
-        <TextBlock x:Name="txtbScore" Margin="203,400,918,0"  Text="" Height="40" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtbEnergy" Margin="203,400,918,0"  Text="" Height="40" VerticalAlignment="Top"/>
     </Grid>
 </Page>

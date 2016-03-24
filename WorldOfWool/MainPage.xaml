@@ -84,20 +84,22 @@
     </Page.Resources>
 
     <Grid x:Name="grdCanvas" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-168,-88,-627,10">
-        <TextBlock Name="txtbHappiness" Margin="682,276,323,379" Width="150" RenderTransformOrigin="-1.229,1.058" d:IsLocked="True"/>
-        <TextBlock x:Name="txtbFriends" Margin="697,339,708,0"  Text="" Height="37" VerticalAlignment="Top"/>
-        <Button x:Name="btnLove" x:Uid="uidBtnLove" HorizontalAlignment="Left" Margin="783,222,0,0" VerticalAlignment="Top"  Click="btnLove_click" Height="60" Background="#FFF343EB" BorderThickness="6" RequestedTheme="Light" FontSize="26.667" BorderBrush="#FF3F2693" d:IsLocked="True"/>
+        <TextBlock Name="txtbHappiness" Margin="757,188,728,467" Width="150" RenderTransformOrigin="-1.229,1.058"/>
+        <TextBlock x:Name="txtbFriends" Margin="14,168,1391,0"  Text="" Height="37" VerticalAlignment="Top"/>
+        <Button x:Name="btnLove" x:Uid="uidBtnLove" HorizontalAlignment="Left" Margin="743,113,0,0" VerticalAlignment="Top"  Click="btnLove_click" Height="60" Background="#FFF343EB" BorderThickness="6" RequestedTheme="Light" FontSize="26.667" BorderBrush="#FF3F2693" Width="207"/>
         <Button x:Name="btnFeedMe" x:Uid="uidBtnFeedMe" HorizontalAlignment="Left" Margin="464.333,563.354,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="30" Click="btnFeedMe_click" IsEnabled="False" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" d:IsLocked="True">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-0.085"/>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="btnPlay" x:Uid="uidBtnPlay" HorizontalAlignment="Left" Margin="10,563,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="30" Click="btnPlay_click" IsEnabled="False" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" d:IsLocked="True"/>
+        <Button x:Name="btnPlay" x:Uid="uidBtnPlay" HorizontalAlignment="Left" Margin="10,563,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="1" Click="btnPlay_click" IsEnabled="True" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
         <Image x:Name="imgTapped"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" />
         <Image x:Name="imgSleepSmile"  Source="Images/imgSleepSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
         <Image x:Name="imgSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
         <Image  x:Name="imgSleep" Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
         <Image x:Name="imgSheep" Tapped="imgSheep1_Tapped" Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
-        <Button x:Name="FriendsCount" Content="Show how many friends I've got" HorizontalAlignment="Left" Margin="697,299,0,0" VerticalAlignment="Top" Click="FriendsCount_Click"/>
+        <Button x:Name="FriendsCount" Content="Show how many friends I've got" HorizontalAlignment="Left" Margin="6,120,0,0" VerticalAlignment="Top" Click="FriendsCount_Click"/>
+        <Button x:Name="btnEnergy" Content="Energy" HorizontalAlignment="Left" Margin="970,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.267,0.5" Height="58" Width="118" Click="btnEnergy_Click"/>
+        <TextBlock x:Name="txtbEnergy" HorizontalAlignment="Left" Margin="950,192,0,0" VerticalAlignment="Top" Height="47" Width="214" RenderTransformOrigin="-0.242,1.355"/>
     </Grid>
 </Page>

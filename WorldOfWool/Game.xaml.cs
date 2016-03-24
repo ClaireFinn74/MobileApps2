@@ -37,7 +37,8 @@ namespace WorldOfWool
         //Pop-up box for the instructions, loads asynchronously
         private async void btnInstructions_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new MessageDialog("Move your sheep left, right or centre to try to find friends to play with, once a dog appears though you better get running!!");
+            var dialog = new MessageDialog("Move your sheep left, right or centre to try to find friends to play with, once a dog appears though you better get running!!"
+                                            + "\n" + "After you've finished the game, Please check your friend count!");
             await dialog.ShowAsync();
         }
 
@@ -104,7 +105,9 @@ namespace WorldOfWool
             if (RandomImage == Boxer)
             {
                 Boxer.Visibility = Visibility.Visible;
-                var dialog = new MessageDialog("Ooh the Boxer chased you out! Hard Luck");
+                Globalclass.energy = 0;
+                var dialog = new MessageDialog("Ooh the Boxer chased you out! Hard Luck!" + "\n" +
+                                                "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();
                 //When you press Close on the message box it navigates back to the Main Page
                 Frame.Navigate(typeof(MainPage));
@@ -168,7 +171,9 @@ namespace WorldOfWool
             else if (RandomImage == BorderCollie)
             {
                 BorderCollie.Visibility = Visibility.Visible;
-                var dialog = new MessageDialog("Ooh the Border Collie chased you out! Hard Luck");
+                Globalclass.energy = 0;
+                var dialog = new MessageDialog("Ooh the Border Collie chased you out! Hard Luck" + "\n" +
+                                                "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();
                 Frame.Navigate(typeof(MainPage));
             }
@@ -183,7 +188,9 @@ namespace WorldOfWool
             if (RandomImage == BassettHound)
             {
                 BassettHound.Visibility = Visibility.Visible;
-                var dialog = new MessageDialog("Ooh the Basset Hound chased you out! Hard Luck");
+                Globalclass.energy = 0;
+                var dialog = new MessageDialog("Ooh the Basset Hound chased you out! Hard Luck" + "\n" +
+                                                "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();
                 Frame.Navigate(typeof(MainPage));
             }
@@ -246,7 +253,9 @@ namespace WorldOfWool
             if (RandomImage == Collie)
             {
                 Collie.Visibility = Visibility.Visible;
-                var dialog = new MessageDialog("Ooh the Collie chased you out! Hard Luck");
+                Globalclass.energy = 0;
+                var dialog = new MessageDialog("Ooh the Collie chased you out! Hard Luck" + "\n" +
+                                                "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();
                 Frame.Navigate(typeof(MainPage));
             }
@@ -261,7 +270,9 @@ namespace WorldOfWool
             if (RandomImage == StBernard)
             {
                 StBernard.Visibility = Visibility.Visible;
-                var dialog = new MessageDialog("Ooh the St Bernard chased you out! Hard Luck");
+                Globalclass.energy = 0;
+                var dialog = new MessageDialog("Ooh the St Bernard chased you out! Hard Luck" + "\n" +
+                                                "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();
                 Frame.Navigate(typeof(MainPage));
             }
@@ -324,7 +335,9 @@ namespace WorldOfWool
             else if (RandomImage == Dalmation)
             {
                 Dalmation.Visibility = Visibility.Visible;
-                var dialog = new MessageDialog("Ooh the Dalmation chased you out! Hard Luck");
+                Globalclass.energy = 0;
+                var dialog = new MessageDialog("Ooh the Dalmation chased you out! Hard Luck" + "\n" +
+                                                "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();
                 Frame.Navigate(typeof(MainPage));
             }

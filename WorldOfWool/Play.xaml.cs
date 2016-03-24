@@ -31,10 +31,6 @@ namespace WorldOfWool
             sbFallingItems.Begin();
         }
 
-        int energy = 0;
-
-
-
         //timer variables
         DispatcherTimer dispatch;
         DateTimeOffset start;
@@ -78,8 +74,8 @@ namespace WorldOfWool
                 dispatch.Stop();
                 span = stop - start;
                 txtbTimer.Text = "Time's up!! " + "\n";
-                energy += 20;
-                txtbScore.Text = energy.ToString() + " " + " " + "I've got tonnes of Energy now!! "; //displays textbox
+                Globalclass.energy += 20;
+                txtbEnergy.Text = Globalclass.energy.ToString() + " " + " " + "I've got tonnes of Energy now!! "; //displays textbox
                 var dialog = new MessageDialog("All fed! Now I can play!");
                 await dialog.ShowAsync();
                 Frame.Navigate(typeof(MainPage));
@@ -95,12 +91,9 @@ namespace WorldOfWool
         //Pop-up box for the instructions, loads asynchronously
         private async void btnInstructions_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new MessageDialog("Sit back and let it rain grass so I have enough energy to play!");
+            var dialog = new MessageDialog("Sit back and let it rain grass so I have enough energy to play!" + "\n" + "Please click the Energy button when you're finished to check my energy levels!");
             await dialog.ShowAsync();
         }
 
-        
-
-      
     }
 }

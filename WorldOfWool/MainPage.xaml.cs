@@ -29,8 +29,13 @@ namespace WorldOfWool
             txtbHappiness.Text = happiness.ToString();
             //begins story board for imgsheep blinking
             sbSheep.Begin();
-            btnPlay.Opacity = 100;
-            btnPlay.IsEnabled = true;
+            //Play button is only enabled when energy is 20
+            if (Globalclass.energy <= 20)
+            {
+                btnPlay.Opacity = 0;
+                btnPlay.IsEnabled = false;
+            }
+
         }
 
         private void btnFeedMe_click(object sender, RoutedEventArgs e)
@@ -64,8 +69,6 @@ namespace WorldOfWool
                 }
         }
 
-        
-
         private void imgSheep1_Tapped(object sender, TappedRoutedEventArgs e)
         {
            //sbTapped.Begin();
@@ -75,6 +78,18 @@ namespace WorldOfWool
         {
             //display the text
             txtbFriends.Text = "You now have " + Globalclass.friends.ToString();
+        }
+
+        private void btnEnergy_Click(object sender, RoutedEventArgs e)
+        {
+            //display the text
+            txtbEnergy.Text = "You now have " + Globalclass.energy.ToString();
+            //If Energy is 20, Play button becomes visible
+            if (Globalclass.energy >= 20)
+            {
+                btnPlay.Opacity = 100;
+                btnPlay.IsEnabled = true;
+            }
         }
     }
     
