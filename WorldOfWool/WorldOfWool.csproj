@@ -127,6 +127,7 @@
     <Content Include="ImagesPlay\sheepDogCollie.jpg" />
     <Content Include="ImagesPlay\sheepDogD.png" />
     <Content Include="ImagesPlay\sheepDogStB.jpg" />
+    <Content Include="Images\screenshot.png" />
     <Content Include="imgMiniTapped.jpg" />
     <Content Include="Images\imgSheep.jpg" />
     <Content Include="Images\imgSleep.jpg" />

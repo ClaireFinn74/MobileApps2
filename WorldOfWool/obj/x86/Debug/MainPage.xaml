@@ -81,26 +81,68 @@
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
+        
+        <!-- Sleep Animation -->
+        <Storyboard x:ConnectionId='5' x:Name="sbSleep">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSleep">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.01">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSheep">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.02">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSmile">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.03">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSleepSmile">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.04">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgTapped">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.04">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
     </Page.Resources>
 
-    <Grid x:ConnectionId='5' x:Name="grdCanvas" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-168,-88,-627,10">
-        <TextBlock x:ConnectionId='6' Name="txtbHappiness" Margin="757,188,728,467" Width="150" RenderTransformOrigin="-1.229,1.058"/>
-        <TextBlock x:ConnectionId='7' x:Name="txtbFriends" Margin="14,168,1391,0"  Text="" Height="37" VerticalAlignment="Top"/>
-        <Button x:ConnectionId='8' x:Name="btnLove" x:Uid="uidBtnLove" HorizontalAlignment="Left" Margin="743,113,0,0" VerticalAlignment="Top"                        Height="60" Background="#FFF343EB" BorderThickness="6" RequestedTheme="Light" FontSize="26.667" BorderBrush="#FF3F2693" Width="207"/>
-        <Button x:ConnectionId='9' x:Name="btnFeedMe" x:Uid="uidBtnFeedMe" HorizontalAlignment="Left" Margin="464.333,563.354,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="30"                         IsEnabled="False" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" d:IsLocked="True">
+    <Grid x:ConnectionId='6' x:Name="grdCanvas" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-168,-88,-627,10">
+        <TextBlock x:ConnectionId='7' Name="txtbHappiness" Margin="757,188,728,467" Width="150" RenderTransformOrigin="-1.229,1.058"/>
+        <TextBlock x:ConnectionId='8' x:Name="txtbFriends" Margin="14,168,1391,0"  Text="" Height="37" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='9' x:Name="btnLove" x:Uid="uidBtnLove" HorizontalAlignment="Left" Margin="743,113,0,0" VerticalAlignment="Top"                        Height="60" Background="#FFF343EB" BorderThickness="6" RequestedTheme="Light" FontSize="26.667" BorderBrush="#FF3F2693" Width="207"/>
+        <Button x:ConnectionId='10' x:Name="btnFeedMe" x:Uid="uidBtnFeedMe" HorizontalAlignment="Left" Margin="464.333,563.354,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="30"                         IsEnabled="False" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" d:IsLocked="True">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-0.085"/>
             </Button.RenderTransform>
         </Button>
-        <Button x:ConnectionId='10' x:Name="btnPlay" x:Uid="uidBtnPlay" HorizontalAlignment="Left" Margin="10,563,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="1"                       IsEnabled="True" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
-        <Image x:ConnectionId='11' x:Name="imgTapped"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" />
-        <Image x:ConnectionId='12' x:Name="imgSleepSmile"  Source="Images/imgSleepSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
-        <Image x:ConnectionId='13' x:Name="imgSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
-        <Image x:ConnectionId='14'  x:Name="imgSleep" Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
-        <Image x:ConnectionId='15' x:Name="imgSheep"                           Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
-        <Button x:ConnectionId='16' x:Name="FriendsCount" Content="Show how many friends I've got" HorizontalAlignment="Left" Margin="6,120,0,0" VerticalAlignment="Top"                           />
-        <Button x:ConnectionId='17' x:Name="btnEnergy" Content="Energy" HorizontalAlignment="Left" Margin="970,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.267,0.5" Height="58" Width="118"                        />
-        <TextBlock x:ConnectionId='18' x:Name="txtbEnergy" HorizontalAlignment="Left" Margin="950,192,0,0" VerticalAlignment="Top" Height="47" Width="214" RenderTransformOrigin="-0.242,1.355"/>
+        <Button x:ConnectionId='11' x:Name="btnPlay" x:Uid="uidBtnPlay" HorizontalAlignment="Left" Margin="10,563,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="1"                       IsEnabled="True" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
+        <Image x:ConnectionId='12' x:Name="imgTapped"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" />
+        <Image x:ConnectionId='13' x:Name="imgSleepSmile"  Source="Images/imgSleepSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
+        <Image x:ConnectionId='14' x:Name="imgSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
+        <Image x:ConnectionId='15'  x:Name="imgSleep" Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
+        <Image x:ConnectionId='16' x:Name="imgSheep"                           Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
+        <Button x:ConnectionId='17' x:Name="FriendsCount" Content="Show how many friends I've got" HorizontalAlignment="Left" Margin="6,120,0,0" VerticalAlignment="Top"                           />
+        <Button x:ConnectionId='18' x:Name="btnEnergy" Content="Energy" HorizontalAlignment="Left" Margin="970,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.267,0.5" Height="58" Width="118"                        />
+        <TextBox x:ConnectionId='19' x:Name="txtbEnergy" IsReadOnly="True" HorizontalAlignment="Left" Margin="950,192,0,0" VerticalAlignment="Top" Height="47" Width="214" RenderTransformOrigin="-0.242,1.355" />
+        <!-- Screenshot functionality on button Click-->
+        <Button x:ConnectionId='20' x:Name="btnScreenshot" Content="Capture" HorizontalAlignment="Left" Margin="247,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.267,0.5" Height="58" Width="118"                            />
+        <Image x:ConnectionId='21' x:Name="imageControl" Width="200" Height="200"/>
     </Grid>
 </Page>
 

@@ -91,6 +91,7 @@ namespace WorldOfWool
             }
         }
 
+        //When the user clicks the 'Left' button, asynchronously awaiting the dialogue box
         private async void btnLeft_Click(object sender, RoutedEventArgs e)
         {
             //Starts the sheep moving left storyboard
@@ -105,26 +106,52 @@ namespace WorldOfWool
             if (RandomImage == Boxer)
             {
                 Boxer.Visibility = Visibility.Visible;
-                Globalclass.energy = 0;
+                //Global variable which allows energy text box to be updated on MainPage
+                Globalclass.energy = Globalclass.energy - 20;
                 var dialog = new MessageDialog("Ooh the Boxer chased you out! Hard Luck!" + "\n" +
                                                 "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();
                 //When you press Close on the message box it navigates back to the Main Page
                 Frame.Navigate(typeof(MainPage));
             }
+            //if the random image is a sheep, a sheep image becomes visible onscreen
             else if (RandomImage == imgSleep)
             {
+                //sheep image visibility property becomes visible
                 imgSleep.Visibility = Visibility.Visible;
+                //text box appears
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
+                //the global int friends counts the sheep images/puts 'friends' score up by 1 every time
                 Globalclass.friends = Globalclass.friends + 1;
+                //friends textbox is updated on the main page
                 txtbFriends.Text = Globalclass.friends.ToString();
+                //If happiness is less than the MAX happiness(1000)
+                if (Globalclass.happiness < Globalclass.MAXHappiness)
+                {
+                    //the global int happiness adds 10 to the happiness textbox on the mainpage
+                    Globalclass.happiness = Globalclass.happiness + 10;
+                }
+                else
+                {
+                    System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                }
             }
+            //rest of the else ifs create more sheep images randomly generated
             else if (RandomImage == imgSheep)
             {
                 imgSheep.Visibility = Visibility.Visible;
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == imgSmile)
             {
@@ -132,6 +159,15 @@ namespace WorldOfWool
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == imgSleepSmile)
             {
@@ -139,6 +175,15 @@ namespace WorldOfWool
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == imgTappedLeft)
             {
@@ -146,6 +191,15 @@ namespace WorldOfWool
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == imgSheep2)
             {
@@ -153,6 +207,15 @@ namespace WorldOfWool
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == imgSmile2)
             {
@@ -160,6 +223,15 @@ namespace WorldOfWool
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == imgTappedLeft2)
             {
@@ -167,18 +239,27 @@ namespace WorldOfWool
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == BorderCollie)
             {
                 BorderCollie.Visibility = Visibility.Visible;
-                Globalclass.energy = 0;
+                Globalclass.energy = Globalclass.energy - 20;
                 var dialog = new MessageDialog("Ooh the Border Collie chased you out! Hard Luck" + "\n" +
                                                 "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();
                 Frame.Navigate(typeof(MainPage));
             }
         }
-
+        //When the user clicks the 'Right' button, 
         private async void btnRight_Click(object sender, RoutedEventArgs e)
         {
             sbBtnRight.Begin();
@@ -188,7 +269,7 @@ namespace WorldOfWool
             if (RandomImage == BassettHound)
             {
                 BassettHound.Visibility = Visibility.Visible;
-                Globalclass.energy = 0;
+                Globalclass.energy =Globalclass.energy - 20;
                 var dialog = new MessageDialog("Ooh the Basset Hound chased you out! Hard Luck" + "\n" +
                                                 "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();
@@ -200,6 +281,15 @@ namespace WorldOfWool
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == RightSheep)
             {
@@ -207,6 +297,15 @@ namespace WorldOfWool
                 txtbRight.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == RightSmile)
             {
@@ -214,6 +313,15 @@ namespace WorldOfWool
                 txtbRight2.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == RightSleepSmile)
             {
@@ -221,6 +329,15 @@ namespace WorldOfWool
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == RightTappedLeft)
             {
@@ -228,6 +345,15 @@ namespace WorldOfWool
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == RightSheep2)
             {
@@ -235,6 +361,15 @@ namespace WorldOfWool
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == RightSmile2)
             {
@@ -242,6 +377,15 @@ namespace WorldOfWool
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == RightTapped2)
             {
@@ -249,18 +393,27 @@ namespace WorldOfWool
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             if (RandomImage == Collie)
             {
                 Collie.Visibility = Visibility.Visible;
-                Globalclass.energy = 0;
+                Globalclass.energy = Globalclass.energy - 20;
                 var dialog = new MessageDialog("Ooh the Collie chased you out! Hard Luck" + "\n" +
                                                 "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();
                 Frame.Navigate(typeof(MainPage));
             }
         }
-
+        //When the user clicks the 'Centre' button, 
         private async void btnCentre_Click(object sender, RoutedEventArgs e)
         {
             sbBtnCentre.Begin();
@@ -270,7 +423,7 @@ namespace WorldOfWool
             if (RandomImage == StBernard)
             {
                 StBernard.Visibility = Visibility.Visible;
-                Globalclass.energy = 0;
+                Globalclass.energy = Globalclass.energy - 20;
                 var dialog = new MessageDialog("Ooh the St Bernard chased you out! Hard Luck" + "\n" +
                                                 "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();
@@ -282,6 +435,15 @@ namespace WorldOfWool
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == Sheep)
             {
@@ -289,6 +451,15 @@ namespace WorldOfWool
                 txtbCenter.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == Smile)
             {
@@ -296,6 +467,15 @@ namespace WorldOfWool
                 txtbCenter2.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == SleepSmile)
             {
@@ -303,6 +483,15 @@ namespace WorldOfWool
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == Tapped)
             {
@@ -310,6 +499,15 @@ namespace WorldOfWool
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == Sheep2)
             {
@@ -317,6 +515,15 @@ namespace WorldOfWool
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == Smile2)
             {
@@ -324,6 +531,15 @@ namespace WorldOfWool
                 txtbLeft2.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == Tapped2)
             {
@@ -331,11 +547,20 @@ namespace WorldOfWool
                 txtbLeft.Text = "You got a new friend for the herd!! " + "\n";
                 Globalclass.friends = Globalclass.friends + 1;
                 txtbFriends.Text = Globalclass.friends.ToString();
+                    if (Globalclass.happiness < Globalclass.MAXHappiness)
+                    {
+                        //the global int happiness adds 10 to the happiness textbox on the mainpage
+                        Globalclass.happiness = Globalclass.happiness + 10;
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine("Max happiness achieved!");
+                    }
             }
             else if (RandomImage == Dalmation)
             {
                 Dalmation.Visibility = Visibility.Visible;
-                Globalclass.energy = 0;
+                Globalclass.energy = Globalclass.energy - 20;
                 var dialog = new MessageDialog("Ooh the Dalmation chased you out! Hard Luck" + "\n" +
                                                 "Check your friend count to see have you made any pals!");
                 await dialog.ShowAsync();

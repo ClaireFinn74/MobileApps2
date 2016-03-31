@@ -348,6 +348,9 @@
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ImagesPlay\sheepDogD.png">
       <PackagePath>ImagesPlay\sheepDogD.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Images\screenshot.png">
+      <PackagePath>Images\screenshot.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>

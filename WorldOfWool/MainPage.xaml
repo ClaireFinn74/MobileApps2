@@ -81,6 +81,45 @@
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
+        
+        <!-- Sleep Animation -->
+        <Storyboard x:Name="sbSleep">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSleep">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.01">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSheep">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.02">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSmile">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.03">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSleepSmile">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.04">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgTapped">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.04">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
     </Page.Resources>
 
     <Grid x:Name="grdCanvas" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-168,-88,-627,10">
@@ -100,6 +139,9 @@
         <Image x:Name="imgSheep" Tapped="imgSheep1_Tapped" Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
         <Button x:Name="FriendsCount" Content="Show how many friends I've got" HorizontalAlignment="Left" Margin="6,120,0,0" VerticalAlignment="Top" Click="FriendsCount_Click"/>
         <Button x:Name="btnEnergy" Content="Energy" HorizontalAlignment="Left" Margin="970,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.267,0.5" Height="58" Width="118" Click="btnEnergy_Click"/>
-        <TextBlock x:Name="txtbEnergy" HorizontalAlignment="Left" Margin="950,192,0,0" VerticalAlignment="Top" Height="47" Width="214" RenderTransformOrigin="-0.242,1.355"/>
+        <TextBox x:Name="txtbEnergy" IsReadOnly="True" HorizontalAlignment="Left" Margin="950,192,0,0" VerticalAlignment="Top" Height="47" Width="214" RenderTransformOrigin="-0.242,1.355" />
+        <!-- Screenshot functionality on button Click-->
+        <Button x:Name="btnScreenshot" Content="Capture" HorizontalAlignment="Left" Margin="247,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.267,0.5" Height="58" Width="118" Click="btnScreenshot_Click"/>
+        <Image x:Name="imageControl" Width="200" Height="200"/>
     </Grid>
 </Page>

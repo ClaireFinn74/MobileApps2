@@ -10,5 +10,9 @@ namespace WorldOfWool
     {
         public static int friends;
         public static int energy = 0;
+        public static int happiness = 0;
+        public static int MAXHappiness = 1000;
+
+
     }
 }
