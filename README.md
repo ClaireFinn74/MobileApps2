@@ -1,30 +1,42 @@
 # MobileApps2
 #World Of Wool, a "Tamagotchi-style" app created using Microsoft Visual Studio 2015 and Blend
 
-##Commit1 and Commit2 (Initial)
-1. Uploaded Sheep image, inserted "Play" button and "Gimmie Love" button
-2. Added navigation between main page and a second page called "Play" to add in a side game later
-3. Added a "Mood" counter that increments every time "Gimmie Love" button is pressed and stops at 100
+##Overview
 
-##Commit3
-1. Storyboard done so that the Sheep blinks every 5 seconds using 2 images; 1 Visible (eyes open), while the other is collapsed (eyes closed)
-2. Added ReadMe
+This is a universal windows 10 app which implements the following:
 
-##Commit4
-1. When the user presses the 'Gimmie Love' button, the counter increases to 100.
-2. At 100, the sbSheep storyboard stops and the sbSmile storyboard begins
-3. This changes the sheep from looking bored to looking happy!
-4. (sbSmile blinking functionality to be added next)
+1. Storyboards
 
-##Commit5
-1. Added blinking functionality for the smiling sheep in the sbSmile storyboard
+2. Global Variables
 
-##Commit6
-1. Added a tap event (commented out for now, will get back to fixing it)
+3. Localization Settings
 
-##Commit 7
-1. Added images to the Play page where the game will take place.
-2. Added a pop-up box with instructions on how to play the game
+4. Camera functionality
 
-##Commit 8
-1. Added a timer that displays "times up" when finished (set to 60 seconds) so that the user can have a time limit
+5. Attempt at reading from a JSON file
+
+6. Dispatch Timer
+
+7. Navigation between pages
+
+8. Async/Await message dialogue boxes
+
+9. Random Arrays
+
+##Summary of what the app does
+1. This app allows the user to click a button in order to give the "Tamagotchi-style" Sheep "Happiness" (an int that increments all the way to 1000)
+
+2. Once you get the Sheep to +20 "Happiness" you will unlock the "To the Field to feed me" button which navigates you to a page where there is a dispatch timer running and a storyboard playing. The storyboard is basically grass falling which gives the sheep enough energy (+20, basically an int that adds 20 everytime you go to that page) to unlock the "Play button". When this timer runs out a dialogue box appears and you're brought back to the main page and you must press the "Energy" button to check the sheeps "Energy levels" to unlock the "Play" button.
+
+3. When you press the "Play button there is a sheep and 3 buttons; "Left", "Right and "Centre". The sheep can be moved left, right and centre by pressing these buttons! The buttons are storyboards I made using Microsoft Expression Blend. When you press a button (left, right or centre) a sheep appears which adds to your "Friend Count". Sometimes though, a sheep dog apppears and chases you out of the "Field" (brings you back to the main page). To do this I used a random array filled with sheep and dog images for each button so you don't know how many "Friends" you'll make before a dog chases you out! You can then check your "Friends Count" by pressing a button on the Main Page. If you press the Happiness button afer playing the game you will see that it has incremented by 10 with every "Friend" made.
+
+4. The "Energy", "Happiness" and "Friends" Buttons have Global variables within them to allow me to add happiness once you've played the game or take away energy when you've played the game, to add friends to the "Friends" count once you've made them in the game and to be able to generally save the data across the pages.
+
+5. I added a Camera functionality which uses your camera on your device and awaits the user to take a picture using async/await. The photo can then be cropped and saved to the Main Page. The user can also press "Cancel" to get out of the camera without taking a picture.
+
+6. I added a Text File written in JSON in order to read in this data by converting it to a string first. Unfortunately, this didn't fully work so I disabled the button associated with it.
+
+##References
+
+
+
