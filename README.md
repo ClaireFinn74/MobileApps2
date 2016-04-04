@@ -43,6 +43,8 @@ https://msdn.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-vid
 
 https://msdn.microsoft.com/en-us/windows.ui.xaml.dispatchertimer.tick Dispatch Timer
 
+https://msdn.microsoft.com/en-us/default.aspx General help
+
 ##Images
 http://previews.123rf.com/images/chudtsankov/chudtsankov1401/chudtsankov140100041/25203634-Cute-Black-Head-Sheep-Cartoon-Mascot-Character-Illustration-Isolated-on-white-Stock-Vector.jpg
 
