@@ -36,6 +36,8 @@ This is a universal windows 10 app which implements the following:
 
 6. I added a Text File written in JSON in order to read in this data by converting it to a string first. Unfortunately, this didn't fully work so I disabled the button associated with it.
 
+7. I added Localisation settings by giving all of the text that will be displayed on the app a UID(Universal ID) on their separate XAML controls. This UID can then be universally used between the different languages. I added 3 “Resource” pages in order to add language settings to the app. When you change your language on your device settings the app should display in Irish, French and English. 
+
 #References
 
 ##Code
