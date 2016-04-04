@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-ga"
+"ResourceDimensions"		"language-ga-ie"
+
+[Files]
+"C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\obj\ARM\Release\Upload\split.language-ga.pri"			"resources.pri"

@@ -1,0 +1,2 @@
+MainPackage=C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\x86\Release\Upload\WorldOfWool_1.1.0.0_x86.appx
+SymbolPackage=C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\AppPackages\WorldOfWool_1.1.0.0\WorldOfWool_1.1.0.0_x86.appxsym

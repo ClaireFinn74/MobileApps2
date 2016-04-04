@@ -1,0 +1,4 @@
+MainPackage=C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\ARM\Release\WorldOfWool_1.1.0.0_ARM.appx
+SymbolPackage=C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\AppPackages\WorldOfWool_1.1.0.0_Test\WorldOfWool_1.1.0.0_ARM.appxsym
+ResourcePack=C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\ARM\Release\WorldOfWool_1.1.0.0_language-fr.appx
+ResourcePack=C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\bin\ARM\Release\WorldOfWool_1.1.0.0_language-ga.appx

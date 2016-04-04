@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="32559ClaireFinn.WorldofWool" version="1.0" primary="true">
+		<Qualifiers>
+			<AlternateForm>UNPLATED</AlternateForm>
+			<Language>EN-US</Language>
+			<Scale>200</Scale>
+			<TargetSize>24</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/App.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ApplicationInsights.config" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/ApplicationInsights.config">
+				<Candidate type="Path">
+					<Value>ApplicationInsights.config</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Game.xbf" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Game.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="imgMiniTapped.jpg" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/imgMiniTapped.jpg">
+				<Candidate type="Path">
+					<Value>imgMiniTapped.jpg</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/MainPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Play.xbf" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Play.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SheepInfo.xbf" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/SheepInfo.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WorldOfWool.xr.xml" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/WorldOfWool.xr.xml">
+				<Candidate type="Path">
+					<Value>WorldOfWool.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="LockScreenLogo.png" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Assets/LockScreenLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\LockScreenLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Assets/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square150x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Assets/Square44x44Logo.png">
+					<Candidate qualifiers="TargetSize-24, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Assets/StoreLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\StoreLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Data">
+				<NamedResource name="TextSheep.txt" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Data/TextSheep.txt">
+					<Candidate type="Path">
+						<Value>Data\TextSheep.txt</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Images">
+				<NamedResource name="imgSheep.jpg" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Images/imgSheep.jpg">
+					<Candidate type="Path">
+						<Value>Images\imgSheep.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="imgSleep.jpg" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Images/imgSleep.jpg">
+					<Candidate type="Path">
+						<Value>Images\imgSleep.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="imgSleepSmile.jpg" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Images/imgSleepSmile.jpg">
+					<Candidate type="Path">
+						<Value>Images\imgSleepSmile.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="imgSmile.jpg" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Images/imgSmile.jpg">
+					<Candidate type="Path">
+						<Value>Images\imgSmile.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="imgTapped.jpg" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Images/imgTapped.jpg">
+					<Candidate type="Path">
+						<Value>Images\imgTapped.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="screenshot.png" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Images/screenshot.png">
+					<Candidate type="Path">
+						<Value>Images\screenshot.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="ImagesPlay">
+				<NamedResource name="GrassTuft.png" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/ImagesPlay/GrassTuft.png">
+					<Candidate type="Path">
+						<Value>ImagesPlay\GrassTuft.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="sheepDogBH.jpg" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/ImagesPlay/sheepDogBH.jpg">
+					<Candidate type="Path">
+						<Value>ImagesPlay\sheepDogBH.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="sheepDogBoxer.jpg" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/ImagesPlay/sheepDogBoxer.jpg">
+					<Candidate type="Path">
+						<Value>ImagesPlay\sheepDogBoxer.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="sheepDogBW.jpg" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/ImagesPlay/sheepDogBW.jpg">
+					<Candidate type="Path">
+						<Value>ImagesPlay\sheepDogBW.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="sheepDogCollie.jpg" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/ImagesPlay/sheepDogCollie.jpg">
+					<Candidate type="Path">
+						<Value>ImagesPlay\sheepDogCollie.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="sheepDogD.png" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/ImagesPlay/sheepDogD.png">
+					<Candidate type="Path">
+						<Value>ImagesPlay\sheepDogD.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="sheepDogStB.jpg" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/ImagesPlay/sheepDogStB.jpg">
+					<Candidate type="Path">
+						<Value>ImagesPlay\sheepDogStB.jpg</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Properties">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/Properties/Default.rd.xml">
+					<Candidate type="Path">
+						<Value>Properties\Default.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Windows.winmd" uri="ms-resource://32559ClaireFinn.WorldofWool/Files/WinMetadata/Windows.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Windows.winmd</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Resources">
+			<NamedResource name="Description" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/Description">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A game that allows you to play with one very bored sheep!</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DisplayName" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/DisplayName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>World of Wool</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ShortName" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/ShortName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>WoW</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="uidBtnBack">
+				<NamedResource name="Content" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/uidBtnBack/Content">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Back</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="uidBtnCentre">
+				<NamedResource name="Content" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/uidBtnCentre/Content">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Centre</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="uidBtnEnergy">
+				<NamedResource name="Content" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/uidBtnEnergy/Content">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Energy</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="uidBtnFeedMe">
+				<NamedResource name="Content" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/uidBtnFeedMe/Content">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>To the field to feed me!</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="uidBtnFriendsCount">
+				<NamedResource name="Content" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/uidBtnFriendsCount/Content">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Show how many friends I've got</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="uidBtnInstructions">
+				<NamedResource name="Content" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/uidBtnInstructions/Content">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Instructions</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="uidBtnLeft">
+				<NamedResource name="Content" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/uidBtnLeft/Content">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Left</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="uidBtnLove">
+				<NamedResource name="Content" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/uidBtnLove/Content">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Gimmie Love!</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="uidBtnPlay">
+				<NamedResource name="Content" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/uidBtnPlay/Content">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Play</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="uidBtnRight">
+				<NamedResource name="Content" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/uidBtnRight/Content">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Right</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="uidBtnScreenshot">
+				<NamedResource name="Content" uri="ms-resource://32559ClaireFinn.WorldofWool/Resources/uidBtnScreenshot/Content">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Capture</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

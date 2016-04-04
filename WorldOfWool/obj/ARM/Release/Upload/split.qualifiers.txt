@@ -1,0 +1,2 @@
+Language=FR-FR
+Language=GA-IE

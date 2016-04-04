@@ -1,0 +1,69 @@
+﻿[
+{"name" : "Askanian", "origin" : "Ukraine", 
+"purpose" : "Wool","alternateName" : "Askaniysky"},
+{
+    "name" : "Churra", 
+	"origin" : "Spain",
+	"purpose" : "Meat and Milk", 
+	"alternateName" : "Spanish Churro"},
+{
+    "name" : "Coburger Fuchsschaf", 
+	"origin" : "Germany",
+	"purpose" : "Vegetation Management", 
+	"alternateName" : "Coburg Fox Sheep"},
+{
+    "name" : "Devon Longwoolled", 
+	"origin" : "United Kingdom",
+	"purpose" : "Meat and Wool", 
+	"alternateName" : "Devon Longwool;"},
+
+{	"name" : "Estonian Ruhnu", 
+	"origin" : "Estonia",
+	"purpose" : "Meat and Wool", 
+	"alternateName" : "Eesti Maalammas"},
+
+{	"name" : "Finnsheep", 
+	"origin" : "Finland",
+	"purpose" : "Meat", 
+	"alternateName" : "Finnish Landrace"},
+
+{	"name" : "Galway", 
+	"origin" : "Ireland",
+	"purpose" : "Meat", 
+	"alternateName" : "None"},
+
+{	"name" : "Hebridean", 
+	"origin" : "Scotland",
+	"purpose" : "Vegetation Management", 
+	"alternateName" : "St Kilda Sheep"},
+
+{	"name" : "Iranian Red Sheep", 
+	"origin" : "Iran",
+	"purpose" : "Meat", 
+	"alternateName" : "Oriental Mouflan"},
+
+{	"name" : "Lohi", 
+	"origin" : "Pakistan",
+	"purpose" : "Wool", 
+	"alternateName" : "None"},
+
+{	"name" : "South African Meat Merino", 
+	"origin" : "South Africa",
+	"purpose" : "Meat and Wool", 
+	"alternateName" : "SAMM"},
+
+{	"name" : "Tunis", 
+	"origin" : "Tunisia",
+	"purpose" : "Meat", 
+	"alternateName" : "Tunisian Barbary"},
+
+{	"name" : "Valachian Sheep", 
+	"origin" : "Czech Republic",
+	"purpose" : "Meat and Milk and Wool", 
+	"alternateName" : "Native Wallachian Sheep"},
+
+{	"name" : "Zelazna", 
+	"origin" : "Poland",
+	"purpose" : "Meat", 
+	"alternateName" : "Zeleznienska"}
+]

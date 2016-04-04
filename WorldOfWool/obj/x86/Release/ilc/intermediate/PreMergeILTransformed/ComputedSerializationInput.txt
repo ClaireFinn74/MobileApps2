@@ -1,0 +1,7 @@
+"/t:Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult,Microsoft.IdentityModel.Clients.ActiveDirectory,json"
+"/t:Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticatorTemplate,Microsoft.IdentityModel.Clients.ActiveDirectory,json"
+"/t:Microsoft.IdentityModel.Clients.ActiveDirectory.TokenResponse,Microsoft.IdentityModel.Clients.ActiveDirectory,json"
+"/t:Microsoft.IdentityModel.Clients.ActiveDirectory.IdToken,Microsoft.IdentityModel.Clients.ActiveDirectory,json"
+"/t:Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticatorTemplate+InstanceDiscoveryResponse,Microsoft.IdentityModel.Clients.ActiveDirectory,json"
+"/t:Microsoft.IdentityModel.Clients.ActiveDirectory.UserRealmDiscoveryResponse,Microsoft.IdentityModel.Clients.ActiveDirectory,json"
+"/t:System.Object,System.Runtime,json"
