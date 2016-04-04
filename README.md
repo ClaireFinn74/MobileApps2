@@ -38,5 +38,14 @@ This is a universal windows 10 app which implements the following:
 
 ##References
 
+#Code
+https://msdn.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui Camera functionality
+https://msdn.microsoft.com/en-us/windows.ui.xaml.dispatchertimer.tick Dispatch Timer
+
+#Images
+http://previews.123rf.com/images/chudtsankov/chudtsankov1401/chudtsankov140100041/25203634-Cute-Black-Head-Sheep-Cartoon-Mascot-Character-Illustration-Isolated-on-white-Stock-Vector.jpg
+http://us.123rf.com/450wm/kekoka/kekoka1411/kekoka141100011/34037828-illustrations-of-dog-face.jpg?ver=6
+http://www.pd4pic.com/images/animals-head-home-face-cartoon-dog-mammals-pets.png
+https://image.spreadshirtmedia.com/image-server/v1/compositions/111436316/views/1,width=235,height=235,appearanceId=1,backgroundColor=f9f9f9,version=1443074494/Cute-Boxer-Dog-Face.jpg
 
 
