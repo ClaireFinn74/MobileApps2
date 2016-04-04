@@ -69,11 +69,23 @@
     <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Xml.Serialization.dll">
       <PackagePath>System.Xml.Serialization.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\Microsoft.OneDriveSDK\1.1.29\lib\win81\OneDriveSdk.dll">
+      <PackagePath>OneDriveSdk.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\Microsoft.OneDriveSDK\1.1.29\lib\win81\OneDriveSdk.WinRT.dll">
+      <PackagePath>OneDriveSdk.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\Microsoft.OneDriveSDK\1.1.29\lib\win81\OneDriveSdk.WinStore.dll">
+      <PackagePath>OneDriveSdk.WinStore.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\Microsoft.VisualBasic\10.0.0\lib\netcore50\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\Newtonsoft.Json\7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -339,8 +351,14 @@
     <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\.nuget\packages\Microsoft.IdentityModel.Clients.ActiveDirectory\2.19.208020213\lib\netcore45\Microsoft.IdentityModel.Clients.ActiveDirectory.winmd">
+      <PackagePath>Microsoft.IdentityModel.Clients.ActiveDirectory.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\Data\TextSheep.txt">
+      <PackagePath>Data\TextSheep.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\owner\Documents\Visual Studio 2015\Projects\WorldOfWool\WorldOfWool\ImagesPlay\GrassTuft.png">
       <PackagePath>ImagesPlay\GrassTuft.png</PackagePath>

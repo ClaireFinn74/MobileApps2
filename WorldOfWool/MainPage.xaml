@@ -7,6 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Tapped="imgSheep1_Tapped" Width="840">
     <Page.Resources>
+        <!-- Sheep blinking storyboard, using two images; one visible (eyes open), one collapsed (eyes closed) -->
         <Storyboard x:Name="sbSheep" RepeatBehavior="Forever">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSheep">
                 <DiscreteObjectKeyFrame KeyTime="0:0:5">
@@ -81,7 +82,7 @@
                 </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
-        
+
         <!-- Sleep Animation -->
         <Storyboard x:Name="sbSleep">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imgSleep">
@@ -123,25 +124,29 @@
     </Page.Resources>
 
     <Grid x:Name="grdCanvas" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-168,-88,-627,10">
-        <TextBlock Name="txtbHappiness" Margin="757,188,728,467" Width="150" RenderTransformOrigin="-1.229,1.058"/>
-        <TextBlock x:Name="txtbFriends" Margin="14,168,1391,0"  Text="" Height="37" VerticalAlignment="Top"/>
-        <Button x:Name="btnLove" x:Uid="uidBtnLove" HorizontalAlignment="Left" Margin="743,113,0,0" VerticalAlignment="Top"  Click="btnLove_click" Height="60" Background="#FFF343EB" BorderThickness="6" RequestedTheme="Light" FontSize="26.667" BorderBrush="#FF3F2693" Width="207"/>
+        <TextBlock Name="txtbHappiness" Margin="746,177,691,494" RenderTransformOrigin="-1.229,1.058"/>
+        <TextBlock x:Name="txtbFriends" Margin="166,157,1276,0"  Text="" Height="37" VerticalAlignment="Top"/>
+        <Button x:Name="btnLove" x:Uid="uidBtnLove" HorizontalAlignment="Left" Margin="711,94,0,0" VerticalAlignment="Top"  Click="btnLove_click" Height="60" Background="#FFF343EB" BorderThickness="6" RequestedTheme="Light" FontSize="26.667" BorderBrush="#FF3F2693" Width="207"/>
         <Button x:Name="btnFeedMe" x:Uid="uidBtnFeedMe" HorizontalAlignment="Left" Margin="464.333,563.354,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="30" Click="btnFeedMe_click" IsEnabled="False" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" d:IsLocked="True">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="-0.085"/>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="btnPlay" x:Uid="uidBtnPlay" HorizontalAlignment="Left" Margin="10,563,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="1" Click="btnPlay_click" IsEnabled="True" Height="69" Width="183.345" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
+        <Button x:Name="btnPlay" x:Uid="uidBtnPlay" HorizontalAlignment="Left" Margin="221,558,0,0" VerticalAlignment="Top" Background="Cyan" Opacity="1" Click="btnPlay_click" IsEnabled="True" Height="69" Width="183" RenderTransformOrigin="0.5,0.5"/>
         <Image x:Name="imgTapped"  Source="Images/imgTapped.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" />
         <Image x:Name="imgSleepSmile"  Source="Images/imgSleepSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
         <Image x:Name="imgSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
         <Image  x:Name="imgSleep" Source="Images/imgSleep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True"/>
         <Image x:Name="imgSheep" Tapped="imgSheep1_Tapped" Source="Images/imgSheep.jpg" HorizontalAlignment="Left" Height="356" VerticalAlignment="Top" Width="327" Margin="316,171,0,0" d:IsLocked="True" d:IsHidden="True" />
-        <Button x:Name="FriendsCount" Content="Show how many friends I've got" HorizontalAlignment="Left" Margin="6,120,0,0" VerticalAlignment="Top" Click="FriendsCount_Click"/>
-        <Button x:Name="btnEnergy" Content="Energy" HorizontalAlignment="Left" Margin="970,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.267,0.5" Height="58" Width="118" Click="btnEnergy_Click"/>
-        <TextBox x:Name="txtbEnergy" IsReadOnly="True" HorizontalAlignment="Left" Margin="950,192,0,0" VerticalAlignment="Top" Height="47" Width="214" RenderTransformOrigin="-0.242,1.355" />
+        <Button x:Name="FriendsCount" x:Uid="uidBtnFriendsCount" Content="Show how many friends I've got" HorizontalAlignment="Left" Margin="113,102,0,0" VerticalAlignment="Top" Click="FriendsCount_Click"/>
+        <Button x:Name="btnEnergy" x:Uid="uidBtnEnergy" Content="Energy" HorizontalAlignment="Left" Margin="975,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.267,0.5" Height="58" Width="118" Click="btnEnergy_Click"/>
+        <TextBox x:Name="txtbEnergy" IsReadOnly="True" HorizontalAlignment="Left" Margin="976,168,0,0" VerticalAlignment="Top" Height="47" Width="294" RenderTransformOrigin="-0.242,1.355" />
         <!-- Screenshot functionality on button Click-->
-        <Button x:Name="btnScreenshot" Content="Capture" HorizontalAlignment="Left" Margin="247,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.267,0.5" Height="58" Width="118" Click="btnScreenshot_Click"/>
-        <Image x:Name="imageControl" Width="200" Height="200"/>
-    </Grid>
+        <Button x:Name="btnScreenshot" x:Uid="uidBtnScreenshot" Content="Capture" HorizontalAlignment="Left" Margin="484,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.267,0.5" Height="58" Width="118" Click="btnScreenshot_Click"/>
+        <!-- For displaying picture that was taken-->
+        <Image x:Name="imageControl" Width="200" Height="200" Margin="935,299,500,219"/>
+<!-- Trying to read JSON info from a Textfile when this button is pressed -->
+        <Button x:Name="btnInfo" Content="Interesting Info" HorizontalAlignment="Left" Margin="738,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.267,0.5" Height="58" Width="131" Click="btnInfo_click" IsEnabled="False"/>
+            
+        </Grid>
 </Page>

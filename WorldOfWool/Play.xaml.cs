@@ -78,6 +78,7 @@ namespace WorldOfWool
                 txtbEnergy.Text = Globalclass.energy.ToString() + " " + " " + "I've got tonnes of Energy now!! "; //displays textbox
                 var dialog = new MessageDialog("All fed! Now I can play!");
                 await dialog.ShowAsync();
+                //Go back to Mainpage when timer is up
                 Frame.Navigate(typeof(MainPage));
             }
         }

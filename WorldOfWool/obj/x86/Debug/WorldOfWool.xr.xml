@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="alternateName" />
+    <RootPropertyPathName Name="purpose" />
+    <RootPropertyPathName Name="origin" />
+    <RootPropertyPathName Name="name" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
@@ -58,6 +64,8 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Name" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
       <RootProperty Name="Rotation" />
@@ -101,5 +109,25 @@
     </RootType>
     <RootType FullName="WorldOfWool.MainPage" />
     <RootType FullName="WorldOfWool.Play" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="WorldOfWool.SheepInfo" />
   </Roots.RootTypes>
 </Roots>

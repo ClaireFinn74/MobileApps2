@@ -7,11 +7,11 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="55f2f3fb-2f47-4bf2-9fe5-4d86fb2f6aa7" Publisher="CN=owner" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="32559ClaireFinn.WorldofWool" Publisher="CN=549E6BF1-DBDC-495E-BD71-FCAA3691BCED" Version="1.1.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="55f2f3fb-2f47-4bf2-9fe5-4d86fb2f6aa7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>WorldOfWool</DisplayName>
-    <PublisherDisplayName>owner</PublisherDisplayName>
+    <DisplayName>World of Wool</DisplayName>
+    <PublisherDisplayName>Claire Finn</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -35,6 +35,22 @@
     <uap:Capability Name="picturesLibrary" />
     <DeviceCapability Name="webcam" />
   </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>CLRHost.dll</Path>
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserCredential" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserAssertion" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="14.0" />

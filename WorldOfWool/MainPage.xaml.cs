@@ -11,6 +11,9 @@ using System.Runtime.CompilerServices;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Navigation;
 using System;
+using System.Collections.Generic;
+using Windows.ApplicationModel;
+using Windows.Data.Json;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace WorldOfWool
@@ -21,7 +24,8 @@ namespace WorldOfWool
     /// 
     public sealed partial class MainPage : Page
     {
-        public MainPage()
+
+          public MainPage()
         {
             this.InitializeComponent();
             //Displays Sheep emotion
@@ -40,20 +44,20 @@ namespace WorldOfWool
             if (Globalclass.happiness == 0)
             {
                 sbSheep.Stop(); //stop storyboard with the bored sheep
-                sbSleep.Begin(); //begin the storyboard with the smiling sheep
+                sbSleep.Begin(); //begin the storyboard with the sleeping sheep
             }
 
             if (Globalclass.happiness == 2)
             {
-                sbSleep.Stop(); //stop storyboard with the bored sheep
-                sbSheep.Begin(); //begin the storyboard with the smiling sheep
+                sbSleep.Stop(); //stop storyboard with the asleep sheep
+                sbSheep.Begin(); //begin the storyboard with the bored sheep
             }
 
             if (Globalclass.happiness >= 20)
             {
                 sbSheep.Stop(); //stop storyboard with the bored sheep
                 sbSmile.Begin(); //begin the storyboard with the smiling sheep
-                // FeedMe button is visible
+                // FeedMe button is then visible
                 btnFeedMe.Opacity = 100;
                 btnFeedMe.IsEnabled = true;
             }
@@ -70,8 +74,14 @@ namespace WorldOfWool
             Frame.Navigate(typeof(Game));
         }
 
+        private void btnInfo_click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SheepInfo));
+        }
+
         private async void btnLove_click(object sender, RoutedEventArgs e)
         {
+            //When happiness is equal to 1, a message box appears explaining the rules of the game
             if (Globalclass.happiness == 1)
             {
                 var dialog = new MessageDialog("Hey, I'm asleep!! Please wake me up!" + "\n" +
@@ -90,18 +100,18 @@ namespace WorldOfWool
                 if (Globalclass.happiness == 0)
                 {
                     sbSheep.Stop(); //stop storyboard with the bored sheep
-                    sbSleep.Begin(); //begin the storyboard with the smiling sheep
+                    sbSleep.Begin(); //begin the storyboard with the sleeping sheep
                 }
                 if (Globalclass.happiness == 2)
                 {
-                    sbSleep.Stop(); //stop storyboard with the bored sheep
-                    sbSheep.Begin(); //begin the storyboard with the smiling sheep
+                    sbSleep.Stop(); //stop storyboard with the asleep sheep
+                    sbSheep.Begin(); //begin the storyboard with the bored sheep
                 }
                 if (Globalclass.happiness >= 20)
                     {
                         sbSheep.Stop(); //stop storyboard with the bored sheep
                         sbSmile.Begin(); //begin the storyboard with the smiling sheep
-                       // FeedMe button is visible
+                       // FeedMe button is then visible
                         btnFeedMe.Opacity = 100;
                         btnFeedMe.IsEnabled = true;
                 }
@@ -147,6 +157,7 @@ namespace WorldOfWool
         captureUI.PhotoSettings.Format = CameraCaptureUIPhotoFormat.Jpeg;
         //Using settings to allow the user to be able to crop captured photo
         captureUI.PhotoSettings.CroppedSizeInPixels = new Size(200, 200);
+        //Awaiting user to take photo
         StorageFile photo = await captureUI.CaptureFileAsync(CameraCaptureUIMode.Photo);
 
         if (photo == null)

@@ -137,9 +137,17 @@
     <value>Centre</value>
     <comment>Déplace le mouton au centre de l'écran</comment>
   </data>
+  <data name="uidBtnEnergy.Content" xml:space="preserve">
+    <value>Énergie</value>
+    <comment>Vérifiez les niveaux d'énergie du mouton</comment>
+  </data>
   <data name="uidBtnFeedMe.Content" xml:space="preserve">
     <value>Sur le terrain pour me nourrir!</value>
     <comment>Pour nourrir les moutons!</comment>
+  </data>
+  <data name="uidBtnFriendsCount.Content" xml:space="preserve">
+    <value>Montrez combien d'amis que j'ai</value>
+    <comment>Nombre d'amis</comment>
   </data>
   <data name="uidBtnInstructions.Content" xml:space="preserve">
     <value>Instructions</value>
@@ -160,5 +168,9 @@
   <data name="uidBtnRight.Content" xml:space="preserve">
     <value>à droite</value>
     <comment>Déplace les moutons vers la droite de l'écran</comment>
+  </data>
+  <data name="uidBtnScreenshot.Content" xml:space="preserve">
+    <value>Capture</value>
+    <comment>Prendre une photo</comment>
   </data>
 </root>

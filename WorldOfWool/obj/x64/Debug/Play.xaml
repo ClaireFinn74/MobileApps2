@@ -1,0 +1,155 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="WorldOfWool.Play"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorldOfWool"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"                     >
+
+    <Page.Resources>
+        <Storyboard x:ConnectionId='2' x:Name="sbFallingItems" Duration="0:0:3" RepeatBehavior="Forever">
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="2680" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre1" d:IsOptimized="True"/>
+            <!-- Tuft of grass falls from the Left -->
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="920" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft1" d:IsOptimized="True"/>
+            <!-- Tuft of grass falls from the Right -->
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="909.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight1" d:IsOptimized="True"/>
+            <!-- A St. Bernard appears to the Left, dodge it! -->
+            <!-- <DoubleAnimation BeginTime="0:0:5" Duration="0:0:2" To="949.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgStBernard" d:IsOptimized="True"/> -->
+            <!-- Tuft of grass falls from the Left -->
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="885.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft12" d:IsOptimized="True"/>
+            <!-- Tuft of grass falls from the Right -->
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="845.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight12" d:IsOptimized="True"/>
+            <!-- A Bassett Hound appears to the Right, dodge it! -->
+           <!-- <DoubleAnimation  BeginTime="0:0:18" Duration="0:0:4" To="906.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgBassetHound" d:IsOptimized="True"/> -->
+            <!-- Tuft of grass falls from the centre -->
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="880" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre12" d:IsOptimized="True"/>
+            <!-- Tuft of grass falls from the Right -->
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="866.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre26" d:IsOptimized="True"/>
+            <!-- Tuft of grass falls from the centre -->
+            <DoubleAnimation  BeginTime="0:0:1" Duration="0:0:2" To="864" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight26" d:IsOptimized="True"/>
+            <!-- Tuft of grass falls from the Left -->
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="861.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft26" d:IsOptimized="True"/>
+            <!-- A Black and White dog appears to the Left, dodge it! -->
+            <!-- <DoubleAnimation BeginTime="0:0:28.7" Duration="0:0:5" To="952" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgBlackAndWhite" d:IsOptimized="True"/> -->
+            <!-- Tuft of grass falls from the centre -->
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="891.391" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre38" d:IsOptimized="True"/>
+            <!-- A Collie appears to the Left, dodge it! -->
+            <!-- <DoubleAnimation BeginTime="0:0:32.6" Duration="0:0:5" To="949.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgCollie" d:IsOptimized="True"/> -->
+            <!-- Tuft of grass falls from the Right -->
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="906.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight38" d:IsOptimized="True"/>
+            <!-- Tuft of grass falls from the Left -->
+            <DoubleAnimation BeginTime="0:0:1"  Duration="0:0:2"  To="759.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft38" d:IsOptimized="True"/>
+            <!-- A Dalmation appears to the Right, dodge it! -->
+            <!-- <DoubleAnimation BeginTime="0:0:38" Duration="0:0:4" To="1002.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgDalmation" d:IsOptimized="True"/> -->
+            <!-- Tuft of grass falls from the Right -->
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="994.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftRight48" d:IsOptimized="True"/>
+            <!-- Tuft of grass falls from the Centre -->
+            <DoubleAnimation BeginTime="0:0:1" Duration="0:0:2" To="758.057" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftCentre48" d:IsOptimized="True"/>
+            <!-- Tuft of grass falls from the Left -->
+            <DoubleAnimation  BeginTime="0:0:1" Duration="0:0:2" To="818.667" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GrassTuftLeft48" d:IsOptimized="True"/>
+            <!-- A Boxer appears to the Left, dodge it! -->
+            <!--  <DoubleAnimation BeginTime="0:0:50.3" Duration="0:0:4" To="784" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="imgBoxer" d:IsOptimized="True"/> -->
+        </Storyboard>
+    </Page.Resources>
+
+    <Grid Margin="-168,-88,-652,10" RenderTransformOrigin="0.984,0.725">
+        <Button x:ConnectionId='3' x:Name="btnInstructions" x:Uid="uidBtnInstructions" HorizontalAlignment="Left" Margin="310,623,0,0" VerticalAlignment="Top" Height="37" Width="98"                               RenderTransformOrigin="1.612,-1.239"/>
+        <!-- <Button x:Name="btnDown" Content="Down" HorizontalAlignment="Left" Margin="202,583,0,0" VerticalAlignment="Top" Height="34" Width="61" RenderTransformOrigin="1.612,-1.239" BorderBrush="#FF39498F" Background="#33EE40BE" Click="btnDown_Click"/> -->
+        <!-- Images-->
+
+        <Image x:ConnectionId='4' x:Name="imgSmile"  Source="Images/imgSmile.jpg" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="86" Margin="308,475,0,0" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <!-- sbFalling Items storyboard Images -->
+        <!-- Sheep has to catch the Grass Tuft images -->
+        <!--Starts at 1 Second, last until 11 seconds, adds the St Bernard dog -->
+        <Image x:ConnectionId='5' x:Name="GrassTuftCentre1"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="12" Margin="308,67,0,0" RenderTransformOrigin="1.806,0.583" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:ConnectionId='6' x:Name="GrassTuftLeft1"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="18" Margin="-7,57,0,0" RenderTransformOrigin="5.379,0.292" >
+            <Image.RenderTransform>
+                <CompositeTransform ScaleX="-1"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:ConnectionId='7' x:Name="GrassTuftRight1"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="17" Margin="443,61,0,0" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <!--Starts at 12 Seconds, last until 19 seconds, adds the dog -->
+        <Image x:ConnectionId='8' x:Name="GrassTuftCentre12"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="13" Margin="328,67,0,0" RenderTransformOrigin="-4.026,1.136" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:ConnectionId='9' x:Name="GrassTuftLeft12"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="17" Margin="23,58,0,0" RenderTransformOrigin="5.379,0.292" >
+            <Image.RenderTransform>
+                <CompositeTransform ScaleX="-1"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:ConnectionId='10' x:Name="GrassTuftRight12"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="16" Margin="463,61,0,0" RenderTransformOrigin="1.208,0.538" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <!--Starts at 19 Seconds, last until 30 seconds, adds the dog -->
+        <Image x:ConnectionId='11' x:Name="GrassTuftCentre26"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="13" Margin="347,67,0,0" RenderTransformOrigin="-3.59,0.923" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:ConnectionId='12' x:Name="GrassTuftLeft26"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="17" Margin="42,59,0,0" RenderTransformOrigin="5.379,0.292" >
+            <Image.RenderTransform>
+                <CompositeTransform ScaleX="-1"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:ConnectionId='13' x:Name="GrassTuftRight26"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="16" Margin="482,62,0,0" RenderTransformOrigin="1.542,0.611" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <!--Starts at 30 Seconds, last until 36 seconds,  adds the dog -->
+        <Image x:ConnectionId='14' x:Name="GrassTuftCentre38"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="27.254" VerticalAlignment="Top" Width="14.779" Margin="363.944,65.873,0,0" RenderTransformOrigin="2.614,0.296" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="1.33" TranslateX="0.121" TranslateY="0.724"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:ConnectionId='15' x:Name="GrassTuftLeft38"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="15" Margin="81,62,0,0" RenderTransformOrigin="5.379,0.292" >
+            <Image.RenderTransform>
+                <CompositeTransform ScaleX="-1"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:ConnectionId='16' x:Name="GrassTuftRight38"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="17" Margin="507,61,0,0" RenderTransformOrigin="0.863,1.587" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <!--Starts at 36 Seconds, last until 48 seconds,  adds the dog -->
+        <Image x:ConnectionId='17' x:Name="GrassTuftCentre48"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="27.254" VerticalAlignment="Top" Width="14.779" Margin="381.788,67.353,0,0" RenderTransformOrigin="2.614,0.296" UseLayoutRounding="False" d:LayoutRounding="Auto" >
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="1.33" TranslateX="0.121" TranslateY="0.724"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:ConnectionId='18' x:Name="GrassTuftLeft48"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="15" Margin="102,62,0,0" RenderTransformOrigin="5.379,0.292" >
+            <Image.RenderTransform>
+                <CompositeTransform ScaleX="-1"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:ConnectionId='19' x:Name="GrassTuftRight48"  Source="ImagesPlay/GrassTuft.png" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="17" Margin="421,61,0,0" RenderTransformOrigin="0.863,1.587" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        
+        <!-- Timer TextBlock -->
+        <TextBlock x:ConnectionId='20' x:Name="txtbTimer" Margin="203,254,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
+        <!-- Score TextBlock -->
+        <TextBlock x:ConnectionId='21' x:Name="txtbEnergy" Margin="203,400,918,0"  Text="" Height="40" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
+

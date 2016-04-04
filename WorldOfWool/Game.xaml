@@ -99,11 +99,12 @@
         <TextBlock x:Name="txtbRight2" Margin="203,100,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
         <TextBlock x:Name="txtbCenter2" Margin="203,300,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
         <TextBlock x:Name="txtbLeft2" Margin="203,300,918,0"  Text="" Height="55" VerticalAlignment="Top"/>
-        <!-- TextBlock for score -->
+        <!-- TextBlock for friends count -->
         <TextBlock x:Name="txtbFriends" Margin="61,642,569,0"  Text="" Height="37" Width="98" VerticalAlignment="Top"/>
     </Grid>
 
     <Page.Resources>
+        <!-- Movement of sheep left, right and centre using storyboards-->
         <Storyboard x:Name="sbBtnRight" AutoReverse="False">
             <DoubleAnimation Duration="0:0:0.1" To="141.333" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="imgTapped" d:IsOptimized="True"/>
 

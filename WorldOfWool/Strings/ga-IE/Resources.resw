@@ -137,9 +137,17 @@
     <value>Lár</value>
     <comment>Bog na caoirigh go dtí lár an scáileáin</comment>
   </data>
+  <data name="uidBtnEnergy.Content" xml:space="preserve">
+    <value>Fuinneamh</value>
+    <comment>Seiceáil leibhéil fuinnimh an caorach</comment>
+  </data>
   <data name="uidBtnFeedMe.Content" xml:space="preserve">
     <value>Imirt</value>
     <comment>A imirt an cluiche</comment>
+  </data>
+  <data name="uidBtnFriendsCount.Content" xml:space="preserve">
+    <value>Taispeáin cé mhéad cairde atá mé</value>
+    <comment>Cairde chomhaireamh</comment>
   </data>
   <data name="uidBtnInstructions.Content" xml:space="preserve">
     <value>Treoracha</value>
@@ -160,5 +168,9 @@
   <data name="uidBtnRight.Content" xml:space="preserve">
     <value>Dheis</value>
     <comment>Bog na caoirigh do cheart an scáileán</comment>
+  </data>
+  <data name="uidBtnScreenshot.Content" xml:space="preserve">
+    <value>Gabháil</value>
+    <comment>Glac pictiúr</comment>
   </data>
 </root>

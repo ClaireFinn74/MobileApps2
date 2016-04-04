@@ -137,9 +137,17 @@
     <value>Centre</value>
     <comment>Moves the sheep to the centre of the screen</comment>
   </data>
+  <data name="uidBtnEnergy.Content" xml:space="preserve">
+    <value>Energy</value>
+    <comment>Check the Sheep's Energy Levels</comment>
+  </data>
   <data name="uidBtnFeedMe.Content" xml:space="preserve">
     <value>To the field to feed me!</value>
     <comment>To feed the sheep!</comment>
+  </data>
+  <data name="uidBtnFriendsCount.Content" xml:space="preserve">
+    <value>Show how many friends I've got</value>
+    <comment>Friends count</comment>
   </data>
   <data name="uidBtnInstructions.Content" xml:space="preserve">
     <value>Instructions</value>
@@ -160,5 +168,9 @@
   <data name="uidBtnRight.Content" xml:space="preserve">
     <value>Right</value>
     <comment>Moves the sheep to the right of the screen</comment>
+  </data>
+  <data name="uidBtnScreenshot.Content" xml:space="preserve">
+    <value>Capture</value>
+    <comment>Take a picture</comment>
   </data>
 </root>
